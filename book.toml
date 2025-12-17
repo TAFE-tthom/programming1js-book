@@ -4,8 +4,6 @@ language = "en"
 src = "src"
 title = "Programming 1 - Javascript"
 
-[build]
-build-dir = "public"
 
 [output.html]
 site-url='/programming1js-book/'
