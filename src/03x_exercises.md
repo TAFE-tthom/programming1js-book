@@ -1,12 +1,9 @@
 # Exercises
 
-Please refer to the following code repository for the exercises <https://github.com/TAFE-tthom/programming1-js>.
 
-Attempt the following exercises in the **Week03** folder.
+## Tasks 💻
 
-Ensure you run `npm install` and `npm run test` while your shell is in the directory of a particular question. Run `npm run test` to check to see if your solution works as specified.
-
-## Tasks
+Work on the following tasks as a way to ensure you have understood this chapter's topic.
 
 ### 1. Even of Odd
 
@@ -39,57 +36,51 @@ node even_or_odd.js 101
 Odd
 ```
 
-### 2. Summation of an array
+## 2. Timestable
 
-Lets assume you have been given an array of numbers that you will need to produce compute the total of.
+Create a program that will output the timestable of a number specified from command line arguments. This should only be until we have reached a multiplication of `n * 12`
 
-You have been given the following array:
-
-```
-let nums = [10, 20, 30, 40, 50];
-```
-
-Using a `loop` construct, your task is to write a program that will calculate the total.
-
-With the above example, the total should be `150`.
-
-If you have a program that matches that, consider changing the values and see if it still calculate the total correctly.
-
-Within mathematics, this operation can be expressed with the following notation:
-
-$$\sum\limits_{i=0}^{n} nums_i$$
-
-Where:
-
-* `n` is the total number of elements. In this case, `nums.length`;
-* `i` is the index
-
-Save your file as `simple_sum.js` and provide comments to the different components of your program.
-
-Do note: Your program should be able to scale with the number of elements in the array, if there is a hardcoded value in your loop condition or you aren't using a loop, your program probably doesn't scale.
-
-
-### 3. Command Line Sum
-
-Using what you have learned from last week and the previous exercise, you will now be extending your program to be able to calculate the total from command line inputs.
-
-Create a file called `cmdsum.js` in which you will write your code. Your program will be used in the following manner:
+When the command line argument is 6.
 
 ```
-node cmdsum.js 10 20 30 40 50
+6
+12
+18
+24
+30
+36
+42
+48
+54
+60
+66
+72
 ```
 
-The above program should output `150`, similar to before, however you have two issues:
+## 3. Number Ranges
 
-* The command line arguments are strings
-* The arguments may not represent a number (what happens when `five` is inputted?)
-* Accessing the first command line argument that isn't `node` or `cmdsum.js` is not at index 0.
+Construct a program that will accept 3 command line arguments in the form of `start`, `end`, `step`.
 
-Consider using the `isNaN` function to check if the argument is a number, if it isn't a number, you can safely ignore it from your total.
+* `start` - is used as the starting number
+* `end` - is used as the final number
+* `step` - is how much to skip by.
 
-Refer to `isNaN` from [MDN isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN).
+To demonstrate how this works.
 
-Comment how you have adapted your code from the previous exercise and how you have checked for bad inputs.
+```
+node generate.js 6 30 3
+6
+9
+12
+15
+18
+21
+24
+27
+30 
+```
+
+For every iteration, `3` was added to the current counter.
 
 
 ### 4. Roller Coaster
@@ -121,4 +112,12 @@ let doesJeffPass = checkHeight(150, 160); //false;
 ```
 
 Comment on the usage of the parameters and how you have tested your function implementation outside of the example given.
+
+## Tasks with Test Cases
+
+Please refer to the following code repository for the exercises <https://github.com/TAFE-tthom/programming1-js>.
+
+Attempt the following exercises in the **Week03** folder.
+
+Ensure you run `npm install` and `npm run test` while your shell is in the directory of a particular question. Run `npm run test` to check to see if your solution works as specified.
 

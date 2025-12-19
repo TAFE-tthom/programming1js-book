@@ -1,28 +1,78 @@
 # Summary
 
-[Introduction](./00_intro.md)
+[Introduction](./introduction.md)
 
 # Setup
 
-- [Preparation](./00_prep.md)
-- [Software and Setup](./001_prep_info.md)
-
+- [Preparation](./preparation.md)
+  - [Software and Setup](./software.md)
+  - [Accessing Resources](./resources.md)
+  - [Structure](./structure.md)
+  - [Review](./review1.md)
+  
 # Programming
 
-[Programming](./00_prog.md)
-- [Command Line, Basics & Tools](./01_basics.md)
+- [Command Line, Basics & Tools](./02basics.md)
   - [Basics and Files](./011_commandline.md)
   - [Commands and Processes](./012_processes.md)
   - [NodeJS](./013_node.md)
+  - [Review](./01t_review.md)
 
-- [Output, Variables & Expressions](./02_var_expr.md)
-  - [Variables](./021_variables.md)
-  - [Data Types](./022_datatypes.md)
-  - [Operators & Expressions](./023_operators.md)
+- [Source Code, Output, Variables](./03jsbasics.md)
+  - [Source Files](./021source.md)
+  - [Variables and Values](./022_variables.md)
+  - [Data Types](./023_datatypes.md)
+  - [Operators & Expressions](./024_operators.md)
+  - [Command Line Arguments](./025_commandline_args.md)
   - [Exercises](./02x_exercises.md)
+  - [Review](./02review.md)
+  - [Supplementary - Debugging](./02s_debugging.md)
 
 - [Control Flow](./03_control_flow.md)
   - [Scope and If-Else](./031_if.md)
   - [Loops](./032_loops.md)
+  - [Nesting Control Flow](./033_nested_flow.md)
+  - [Break and Continue]()
   - [Exercises](./03x_exercises.md)
+  - [Review](./03review.md)
 
+- [Objects, Arrays and Functions](./04_arrays_and_funcs)
+  - [Arrays]()
+  - [Objects]()
+  - [Fields and Indirection]()
+  - [Functions]()
+  - [Parameters and Return Values]()
+  - [Exercises]()
+  - [Review]()
+
+- [Classes and Methods]()
+  - [Class Structure]()
+  - [Fields and Properties]()
+  - [Methods]()
+  - [Modularising Code]()
+  - [Import and Export]()
+  - [Exercises]()
+  - [Review]()
+
+- [Callbacks and Composition]()
+  - [Composition]()
+  - [References]()
+  - [Callbacks]()
+  - [Generalising]()
+  - [Recursion]()
+  - [Exercises]()
+  - [Review]()
+
+- [IO and Aysnc/Await]()
+  - [Standard Input, Output and Error]()
+  - [Text Files]()
+  - [Binary Files]()
+  - [Interpreting Data]()
+  - [Exercises]()
+  - [Review]()
+
+
+---
+
+[Appendix]()
+[Credits]()
