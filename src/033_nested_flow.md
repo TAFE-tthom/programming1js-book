@@ -36,6 +36,68 @@ Given two variables and a few different ranges we want to check for, we can obse
 
 💻 Experiment with the snippet above and change the `temperature` and `raining` variables. Note down the different combinations you can construct and the different branches the code can go down.
 
+## Switch Statements
+
+While `switch` statements aren't the solution to addressing the complex we observe when we have heavily nested if statements, they are another control flow mechanism.
+
+The most suitable time to use a `switch` statement is if we are aware of a fixed number of values that an expression could match. Some suitable examples would be:
+
+* Days of the week
+* Suits for play cards
+* Fixed number of teams
+
+However, it is probably still better to use if statements to handle number ranges.
+
+```js
+switch (dayofweek)
+    case: "Monday"
+        break
+    case: "Tuesday"
+        break
+    case: "Wednesday"
+        break
+    case: "Thursday"
+        break
+    case: "Friday"
+        break
+    case: "Saturday"
+        break
+    case: "Sunday"
+        break
+```
+
+There is the ability to enable fallthrough (not using `break`), which means the code that is used for more than one case will be grouped. However **fallthrough** with switch statements is usually considered a bad practice and can result in unintentional issues.
+
+## Nesting Loops
+
+Similarly with if statements, we can also nest loops within each other. This can be any combination and you may gravitate towards one construct over another based on the data you have to use.
+
+We'll use the snippet below to examine nested loops.
+
+```js
+
+for(let i = 0; i < 3; i++) {
+
+    for(let j = 0; j < 3; j++) {
+        console.log(i, j);
+    }
+}
+```
+
+We can observe that for every `i`, we do 3 iterations of the inner loop (`j`). The output we will observe is the following.
+
+```
+0 0
+0 1
+0 2
+1 0
+1 1
+1 2
+2 0
+2 1
+2 2 
+```
+
 
 ## How many layers can we go?
 

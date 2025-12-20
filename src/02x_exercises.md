@@ -2,7 +2,7 @@
 
 ## Tasks 💻
 
-Work on the following tasks as a way to ensure you have understoodn this chapter's topic.
+Work on the following tasks as a way to ensure you have understood this chapter's topic.
 
 ### 1. Hello Command Line
 
