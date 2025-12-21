@@ -16,6 +16,7 @@
   - [Basics and Files](./011_commandline.md)
   - [Commands and Processes](./012_processes.md)
   - [NodeJS](./013_node.md)
+  - [Version Control](./014_git.md)
   - [Review](./01t_review.md)
 
 - [Source Code, Output, Variables](./03jsbasics.md)
@@ -40,7 +41,6 @@
   - [Arrays](./041_arrays.md)
   - [Objects](./042_objects.md)
   - [Functions](./043_functions.md)
-  - [Indirection](./045_indirection.md)
   - [Exercises](04exercises.md)
   - [Review](04review.md)
 
