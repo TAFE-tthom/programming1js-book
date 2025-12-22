@@ -1,6 +1,7 @@
 # Summary
 
 [Introduction](./introduction.md)
+[Status](./status.md)
 
 # Setup
 
@@ -16,6 +17,7 @@
   - [Basics and Files](./011_commandline.md)
   - [Commands and Processes](./012_processes.md)
   - [NodeJS](./013_node.md)
+  - [NPM]()
   - [Version Control](./014_git.md)
   - [Review](./01t_review.md)
 
@@ -44,31 +46,42 @@
   - [Exercises](04exercises.md)
   - [Review](04review.md)
 
-- [Classes and Methods]()
-  - [Class Structure]()
-  - [Fields and Properties]()
-  - [Methods]()
-  - [Modularising Code]()
-  - [Import and Export]()
+- [Classes and Methods](./05_class.md)
+  - [Prototypes and Class Structure](./050_class_structure.md)
+  - [Methods and Inheritance](./051_inheritance.md)
+  - [Polymorphism and Mixins]()
+  - [Modularising, Import and Export](./054_import.md)
+  - [Errors and Exceptions](./55_errors_exceptions.md)
+  - [Exercises](./05exercises.md)
+  - [Review](./05review.md)
+
+- [Callbacks, IO and Async](./06_cbs_io.md)
+  - [Callbacks](./063_callbacks.md)
+  - [Generalisations](./064_generalisation.md)
+  - [Recursion](./065_recursion.md)
+  - [Standard IO and Buffers](./066_stdbufs.md)
+  - [Exercises](./06exercises.md)
+  - [Review](./06review.md)
+
+- [Basic Data Structures and Algorithms](./07_ds.md)
+  - [Data Structure Details](./071_builtin.md)
+  - [List-Based Data Structures]()
+  - [Sorting and Searching]()
+  - [Tree-Based Data Structures]()
+  - [Exercises]()
+  - [Review]()
+  - [Supplementary - Graphs]()
+
+- [QA, Testing, Debugging and Profiling](./08_software_qa.md)
+  - [Testing Types](./08_test_types.md)
+  - [Vitest]()
+  - [Code Coverage and Static Analysis]()
   - [Exercises]()
   - [Review]()
 
-- [Callbacks and Composition]()
-  - [Composition]()
-  - [References]()
-  - [Callbacks]()
-  - [Generalising]()
-  - [Recursion]()
-  - [Exercises]()
-  - [Review]()
-
-- [IO and Aysnc/Await]()
-  - [Standard Input, Output and Error]()
-  - [Text Files]()
-  - [Binary Files]()
-  - [Interpreting Data]()
-  - [Exercises]()
-  - [Review]()
+- [Web Development]()
+  - [HTML]()
+  - [CSS]()
 
 
 ---

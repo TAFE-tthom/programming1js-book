@@ -124,3 +124,35 @@ Specificaly we are leaning into some particular ideas when using **reference** t
 In short, there is a difference between **Reference** types and **Value** types, anything that is a reference like a `object` or `array` will copy the address while value types like `number` or `boolean` will copy the value.
 
 The outcome from the snippet above is one where we observe the output for both was `100`. This is because both `a` and `b` are mapped to the same allocation (or memory address).
+
+
+## Destructing Operations
+
+The term is a little spicy as destructors or destructuring can be conflated with a different meaning outside of this context. Within Javascript, it may be more appropriate to extract data from the fields of an object or parts of an array.
+
+To extract that, we can simply create a variable an assign it. **However**, we have a more **ergonomic** way of doing this by using a destructuring statement.
+
+```js
+let person = {
+  name: "Jeffrey",
+  age: 34
+};
+
+let someName = person.name;
+let someAge = person.age;
+```
+
+The snippet above shows how we are able to retrieve the data and assign it to variables. We are able to do this more succinctly by doing the following.
+
+
+```js
+let person = {
+  name: "Jeffrey",
+  age: 34
+};
+
+let { name, age } = person;
+```
+
+The above snippet instantiates two name and age as variable assuming they are matching the **keys** inside the person object.
+
