@@ -56,7 +56,7 @@
   - [Review](./05review.md)
 
 - [Callbacks, IO and Async](./06_cbs_io.md)
-  - [Callbacks](./063_callbacks.md)
+  - [Callbacks and Async/Await](./063_callbacks.md)
   - [Generalisations](./064_generalisation.md)
   - [Recursion](./065_recursion.md)
   - [Standard IO and Buffers](./066_stdbufs.md)
@@ -65,11 +65,11 @@
 
 - [Basic Data Structures and Algorithms](./07_ds.md)
   - [Data Structure Details](./071_builtin.md)
-  - [List-Based Data Structures]()
-  - [Sorting and Searching]()
-  - [Tree-Based Data Structures]()
-  - [Exercises]()
-  - [Review]()
+  - [List-Based Data Structures](./72_list.md)
+  - [Sorting and Searching](./73_algos.md)
+  - [Exercises](./07exercises.md)
+  - [Review](./07review.md)
+  - [Supplementary - Trees]()
   - [Supplementary - Graphs]()
 
 - [QA, Testing, Debugging and Profiling](./08_software_qa.md)
@@ -79,9 +79,6 @@
   - [Exercises]()
   - [Review]()
 
-- [Web Development]()
-  - [HTML]()
-  - [CSS]()
 
 
 ---
