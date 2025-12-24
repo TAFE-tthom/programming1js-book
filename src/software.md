@@ -5,13 +5,15 @@ You will need the following software when going through this book. This is to en
 * NodeJS, <https://nodejs.org/en/download>
 * Git, <https://git-scm.com/>
 * Text Editor
-  * Visual Studio Code - <https://code.visualstudio.com/>
+  * VSCodium- <https://vscodium.com/>
   * Kate Editor - <https://kate-editor.org/> 
   * Helix - <https://helix-editor.com/>
   * Vim - <https://www.vim.org/download.php>
   * CudaText - <https://cudatext.github.io/>
   * Lite-XL - <https://lite-xl.com/>
 * Access to a unix-shell (or if you really want to, powershell is somewhat viable).
+
+> **Why don't you recommend Visual Studio Code?**. Simply put, **Microsoft** has built in a lot of undesirable features into their text editor. It has become incredibly disruptive to productivity and for learners. What was once a reasonably good product is better captured by `VSCodium`.
 
 ## What is NodeJS?
 

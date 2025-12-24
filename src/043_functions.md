@@ -70,3 +70,62 @@ let result3 = addTwo(result1, 50); //54
 The above statements are different function calls of the same function `addTwo`.
 
 Refer to the following link for further information [MDN function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
+
+
+## Arrow Functions and Anonymous Functions
+
+Functions within javascript and other programming languages can be assigned to variables. This will be covered in more detail in **Chapter 7, Callbacks** however it is valuable to at least see their construction and usage.
+
+As part of a variable initialisation statement, we are able to construct an **anonymous** function that is then assigned to a variable.
+
+```js
+let hello = function(msg) {
+  console.log("Hello! " + msg);
+};
+
+hello("Veronica");
+```
+
+Given the initial outline from this chapter, this can seem unintuitive as they somewhat go against readability and reuse. However, in certain contexts they can make more sense to be inlined as it is clear what function is being passed as an argument.
+
+With acknowledgement that we can create **anonymous** functions, we are able to create what are called **arrow functions** which are a shorthand version of these.
+
+Re-writing the snippet above, we can write the following.
+
+```js
+let hello = (msg) => console.log("Hello! " + msg);
+
+hello("Veronica");
+```
+
+The above snippet is functionally equivalent to the previous one. It should be noted that arrow functions have an implicit **return** when **not** encapsulated in `{ }`.
+
+```js
+let lengthOfString = function(s) { return s.length; };
+
+let len = lengthOfString("Trackwork"); // 9
+```
+
+By using an arrow function we can omit the `return` keyword here.
+
+```js
+let lengthOfString = (s) => s.length;
+
+let len = lengthOfString("Trackwork"); // 9
+```
+
+Of course, as outlined, as soon as we want the arrow function to be multi-line, we need to use a `return` statement.
+
+
+```js
+let lengthOfString = (s) => {
+  return s.length;
+}
+
+let len = lengthOfString("Trackwork"); // 9
+```
+
+In terms of advantages of using arrow functions over regular functions.
+
+* Brevity, especially if the code is simple
+* Usage with `const` and ensuring that the function cannot be redefined.
