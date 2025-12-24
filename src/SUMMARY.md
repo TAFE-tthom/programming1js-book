@@ -45,6 +45,7 @@
   - [Objects](./042_objects.md)
   - [Functions](./043_functions.md)
   - [Exercises](04exercises.md)
+  - [Project]()
   - [Review](04review.md)
 
 - [Classes and Methods](./05_class.md)
@@ -70,9 +71,10 @@
   - [Sorting and Searching](./73_algos.md)
   - [Iterators and Iterables](./74_iterators.md)
   - [Exercises](./07exercises.md)
+  - [Project]()
   - [Review](./07review.md)
-  - [Supplementary - Trees]()
-  - [Supplementary - Graphs]()
+  - [Supplementary - Trees](./07trees.md)
+  - [Supplementary - Graphs](./07graphs.md)
 
 - [QA, Testing, Debugging and Profiling](./08_software_qa.md)
   - [Testing Types](./08_test_types.md)
@@ -83,8 +85,47 @@
   - [Exercises]()
   - [Review]()
 
+---
 
+- [Introduction to Web Development]()
+  - [Web History and Background](./09_web_history.md)
+  - [HTML Pages and Elements](./09_html.md)
+  - [Defining Pages and Content]()
+  - [HTML Forms and Data](./09forms.md)
+  - [Styling Pages and CSS]()
+  - [CSS Basics and Layout]()
+  - [CSS Selectors]()
+  - [CSS Events and Animations]()
+  - [Javascript Event Handling](./09events.md)
+  - [Browser API and Control]()
+  - [Exercises]()
+  - [Review]()
 
+- [Server-side Web Development]()
+  - [HTTP Protocol and Utilities]()
+  - [Server-side Rendering and Frameworks]()
+  - [Requests and Responses]()
+  - [Endpoints and Serialized Data]()
+  - [Persistent Data Storage]()
+  - [Exercises]()
+  - [Review]()
+
+- [Client-side Web Development]()
+  - [Frontend Frameworks]()
+  - [Components and JSX]()
+  - [Hooks and Update Handling]()
+  - [Local Storage and Communication]()
+  - [Scripting and Packaging]()
+  - [Exercises]()
+  - [Project]()
+  - [Review]()
+
+- [Next Steps and Conclusion]()
+  - [DevOps and Deployment]()
+  - [Browser Capabilities and Desktop]()
+  - [What's Next]()
+  - [Wrap Up]()  
+  
 ---
 
 [Appendix]()
