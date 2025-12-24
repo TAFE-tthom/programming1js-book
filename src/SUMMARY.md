@@ -16,6 +16,7 @@
 - [Command Line, Basics & Tools](./02basics.md)
   - [Basics and Files](./011_commandline.md)
   - [Commands and Processes](./012_processes.md)
+  - [Terminal Shortcuts](./012shortcuts.md)
   - [NodeJS](./013_node.md)
   - [NPM](./015_npm.md)
   - [Version Control](./014_git.md)
