@@ -78,16 +78,15 @@
 
 - [QA, Testing, Debugging and Profiling](./08_software_qa.md)
   - [Testing Types](./08_test_types.md)
-  - [Vitest]()
-  - [Documentation]()
-  - [Code Coverage and Static Analysis]()
-  - [Profiling]()
+  - [Vitest](./08vitest.md)
+  - [Documentation](./08jsdoc.md)
+  - [Internals]()
   - [Exercises]()
   - [Review]()
 
 ---
 
-- [Introduction to Web Development]()
+- [Introduction to Web Development](./9webdevelopment.md)
   - [Web History and Background](./09_web_history.md)
   - [HTML Pages and Elements](./09_html.md)
   - [Defining Pages and Content]()
@@ -101,11 +100,9 @@
   - [Exercises]()
   - [Review]()
 
-- [Server-side Web Development]()
-  - [HTTP Protocol and Utilities]()
-  - [Server-side Rendering and Frameworks]()
-  - [Requests and Responses]()
-  - [Endpoints and Serialized Data]()
+- [Server-side Web Development](./11_serverside_web.md)
+  - [HTTP Protocol and Utilities](./11http.md)
+  - [Server-side Rendering and Frameworks](./11frameworks.md)
   - [Persistent Data Storage]()
   - [Exercises]()
   - [Review]()

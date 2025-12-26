@@ -11,8 +11,8 @@ We will be covering the following topics, they can seem independent but they all
 
 * Test Types with Blackbox and Whitebox Testing
 * Unit Testing and IO Testing
-* Employing static analysis tools like a linter
 * Code coverage tooling and understanding its utility
+* Garbage Collection and how memory is allocated and deallocated
 
-Without testing your code or having the tools to test it, you are at best to assume that it does not work.
+Without testing your code or having the tools to test it, you are at best to assume that it does not work. 
 
