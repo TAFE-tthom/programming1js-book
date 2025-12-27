@@ -80,9 +80,8 @@
   - [Testing Types](./08_test_types.md)
   - [Vitest](./08vitest.md)
   - [Documentation](./08jsdoc.md)
-  - [Internals]()
-  - [Exercises]()
-  - [Review]()
+  - [Internals](./08internals.md)
+  - [Review](08review.md)
 
 ---
 
@@ -105,7 +104,7 @@
   - [Server-side Rendering and Frameworks](./11frameworks.md)
   - [Persistent Data Storage](./11storage.md)
   - [Exercises](./11exercises.md)
-  - [Review]()
+  - [Review](./11review.md)
 
 - [Client-side Web Development]()
   - [Frontend Frameworks]()

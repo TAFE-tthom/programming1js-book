@@ -2,7 +2,7 @@
 
 Data structures are a major moment for programmers. Building linked lists, stacks and queues reveals the mechanics of memory and how reference types work.
 
-* What you should know the understand
+* What you should know and understand
   * How references work and how it relates to aliasing mentioned earlier
   * Implementing traversals for a linked list and other linked data structures
   * Understand pseudo-code
