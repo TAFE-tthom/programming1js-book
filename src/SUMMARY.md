@@ -45,7 +45,6 @@
   - [Objects](./042_objects.md)
   - [Functions](./043_functions.md)
   - [Exercises](04exercises.md)
-  - [Project]()
   - [Review](04review.md)
 
 - [Classes and Methods](./05_class.md)
@@ -71,7 +70,6 @@
   - [Sorting and Searching](./73_algos.md)
   - [Iterators and Iterables](./74_iterators.md)
   - [Exercises](./07exercises.md)
-  - [Project]()
   - [Review](./07review.md)
   - [Supplementary - Trees](./07trees.md)
   - [Supplementary - Graphs](./07graphs.md)
@@ -109,7 +107,6 @@
   - [Hooks and Update Handling](./12hooks.md)
   - [Client-Side Storage](./12storage.md)
   - [Exercises](./12exercises.md)
-  - [Project]()
   - [Review](./12review.md)
 
 - [Next Steps and Conclusion](./13conclusion.md)
