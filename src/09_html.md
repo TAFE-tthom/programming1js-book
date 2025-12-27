@@ -24,7 +24,6 @@ Within HTML, there are different kinds of structures that you will need to ackno
 
 A HTML document will contain the following elements normally all the time. We will look into a simple scaffold on the next for HTML and explain it.
 
-\newpage
 
 ```html
 <!DOCTYPE html>
@@ -54,3 +53,93 @@ A HTML document will contain the following elements normally all the time. We wi
 The above snippet is fairly typical, particularly the following elements `<html>`,
 `<head>`, `<title>`, `<meta>` and `<body>` as these are typically all required for displaying and setting the necessary components of a page.
 
+## Attributes
+
+HTML elements have attributes, while they are as heavily used as they were once. They are still important when associating with styles or providing data that can be used.
+
+The kind of attributes we have available with our DOM elements are.
+
+* Standard Attributes
+* Event Attributes
+* Data Attributes
+* ARIA Attributes
+
+### Standard Attributes
+
+The standard attributes are ones which apply to all elements (almost). These can include `id`, `class`, `style`, `title`, `lang` and `dir`.
+
+Most of the time, the `id`, `class` and `style` attributes are utilised as they serve the purpose most useful for styling.
+
+
+### Data Attributes
+
+An important set of attributes are `data-*` attributes or known as **data-attributes**. Data attributes are able to describe and encode data.
+
+```html
+  <article
+    id="electric-cars"
+    data-columns="3"
+    data-index-number="12314"
+    data-parent="cars">
+    <!-- Electric car content -->
+  </article>
+
+  <article
+    id="solar-cars"
+    data-columns="3"
+    data-index-number="12315"
+    data-parent="cars">
+    <!-- Solar car content -->
+  </article>
+
+  <article
+    id="flying-cars"
+    data-columns="4"
+    data-index-number="12316"
+    data-parent="cars">
+    <!-- Flying car content -->
+  </article>
+  
+```
+
+Within javascript, these elements can be queried and their data extracted.
+
+
+### Event Attributes
+
+Elements in the DOM, have event attribute, not all DOM elements will be able to work nicely with certain events but one can try.
+
+Common event types can include `onclick`, `onkeypress`, `onchange` and `onfocus`.
+
+These attributes are usually being associated with a **Javascript Function** that they will trigger when interacted with.
+
+```html
+<button onclick="sendResponse()">
+Send
+</button>
+```
+
+The above snippet shows the `onclick` attribute being set to a string that looks like a function call. This string is eventually **evaluated** and interpreted as javascript and can be executed.
+
+
+### ARIA Attributes
+
+Accessibility is very important in the web. To help with describing a particular object which may not necessarily be displayed as text, `aria-*` attributes assist with describing the them via `aria-label` but also by giving information about its current state and status.
+
+Consider the scenario where we have a halloween themed website. We use language like `Run Away` to describe exiting the website or moving to another screen.
+
+```html
+<button aria-label="Exit">
+  Run away
+</button>  
+```
+
+It may not be necessarily clear for someone what `Run Away` is doing, especially if they are vision impaired. However the `aria-label` serves the purpose of revealing the true intent is.
+
+For other attributes, consider the following as `aria-label` should be the be-all and end-all of accessibility.
+
+* `aria-role` - Used to describe the role the element is taking such as toolbar, cell or document.
+
+* `aria-describedby` - It refers to the an id of another element which contains the description
+
+* `aria-description` - Similar to describedby but has the description associated.

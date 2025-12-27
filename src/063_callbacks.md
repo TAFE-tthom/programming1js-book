@@ -109,3 +109,29 @@ The code snippet has annotations associated to what statements will be executed 
 * It continues executing after the `calledFirst` callsite, and hits `This is second`, this is because the rest of the code is already ready to execute, we haven't `resolved` the other part
 * No other code is left, the remaining operation in the queue is in the `await` statement and finishes executing `calledFirst`
 
+## `fetch` and retrieve external data
+
+This segment is now focused on an element that is common in web and app development. We will be looking into the `fetch` function and the idea of a `Promise`.
+
+With `node` and the browser, you can call `fetch`, it requires the following:
+* `url`, A url or endpoint is http location in which we want to retrieve data from, this could be a webpage
+
+* (optionally) `options`, This field is expected to be an object which will commonly have: `method`, `body` and `headers` set. There are other fields that can be set but it is dependent on the behvaiour you are asking.
+
+Let's examine the following:
+
+```js
+fetch("https://example.org/post", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ username: "example" }),
+  // …
+});
+```
+
+The snippet above outlines the url as `https://example.org/post`, the method as `POST` and `headers` with an entry outlining the content will be `JSON` and a `body` where an object has been serialised.
+
+These kinds of requests are common and you can observe the usage of these calls when opening the network tab under the developer UI.
+
