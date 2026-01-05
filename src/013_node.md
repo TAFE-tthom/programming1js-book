@@ -37,12 +37,12 @@ What has occured is:
 * It started **interpreting** and **executing** the code from that file
 * It finished because there was no more code to execute
 
-Importantly, the *interpreting* part is indicating is actually indicating that we have a machine inside our machine. This is called a *Virtual Machine*. This is because `node` is a program designed to interpret and execute javascript code.
+Importantly, the *interpreting* part is indicating that we have a machine inside our machine. This is called a *Virtual Machine*. This is because `node` is a program designed to interpret and execute javascript code.
 
 There are many different types of virtual machines out there, you may have encountered them when playing old video games, using a remote computer and running Java or C# code (like Minecraft).
 
 In the spirit of things, it is usually ideal to consider `javasript` as an **interpreted* language, while programming languages like Java and C# are *interpreted* but they are also *compiled*.
 
-What compilation means is that we are taking the source code and outputting machine code, normally something that is not pleasant for humans to read or write by hand.
+What compilation means is that when we are taking the source code and outputting machine code, normally something that is not pleasant for humans to read or write by hand.
 
 

@@ -49,21 +49,22 @@ The most suitable time to use a `switch` statement is if we are aware of a fixed
 However, it is probably still better to use if statements to handle number ranges.
 
 ```js
-switch (dayofweek)
-    case: "Monday"
+switch (dayofweek) {
+    case "Monday":
         break
-    case: "Tuesday"
+    case "Tuesday":
         break
-    case: "Wednesday"
+    case "Wednesday":
         break
-    case: "Thursday"
+    case "Thursday":
         break
-    case: "Friday"
+    case "Friday":
         break
-    case: "Saturday"
+    case "Saturday":
         break
-    case: "Sunday"
+    case "Sunday":
         break
+}
 ```
 
 There is the ability to enable fallthrough (not using `break`), which means the code that is used for more than one case will be grouped. However **fallthrough** with switch statements is usually considered a bad practice and can result in unintentional issues.
@@ -75,10 +76,8 @@ Similarly with if statements, we can also nest loops within each other. This can
 We'll use the snippet below to examine nested loops.
 
 ```js
-
-for(let i = 0; i < 3; i++) {
-
-    for(let j = 0; j < 3; j++) {
+for(int i = 0; i < 3; i++) {
+    for(int j = 0; j < 3; j++) {
         console.log(i, j);
     }
 }

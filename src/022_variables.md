@@ -14,7 +14,7 @@ For most demonstrations, we will be using `let` and `cosnt`.
 
 ## Variable naming 
 
-We need to be mindful about how we name our variables. The name of a variable should be meaningful in the context of the problem it is trying to solve. By convention, Javascript leans in to `camelCase` variable naming. While you are not limited to other kinds of naming conventions, 
+We need to be mindful about how we name our variables. The name of a variable should be meaningful in the context of the problem it is trying to solve. By convention, Javascript leans in to `camelCase` variable naming. While you are not limited to other kinds of naming conventions and some projects will adopt other practices, you will want to look for a style guide relevant for a project.
 
 In addition to this convention, variables must start with a non-numeric character and not use any symbols that could be confused with an **operator**.
 
@@ -22,11 +22,11 @@ Consider the following scenarios and what variable name would be appropriate. ðŸ
 
 * Number of soccer balls in a garage
 * Players part of Red Team
-* If a ligh is on or off
+* If a light is on or off
 * Blood type
 * Email message
 
-You should name our **variables** sensibly and adhere to the **naming rules** that Javascript 
+You should name our **variables** sensibly and adhere to the **naming rules** that Javascript outlines.
 
 ## Variable Values and Assignment ðŸ“’
 

@@ -75,7 +75,7 @@ The way the statement `amounts[0]` is evaluated, **assuming** the memory address
 0x1000 + (index * sizeof object)
 ```
 
-The `sizeof object` is implementationd defined by the Javascript Virtual Machine, however a valid model is to assume `sizeof object` is 8. This assumption is based on size of the pointer (which would make the object a reference type) or smaller than it (which would be a primitive type).
+The `sizeof object` is implementation defined by the Javascript Virtual Machine, however a valid model is to assume `sizeof object` is 8. This assumption is based on size of the pointer (which would make the object a reference type) or smaller than it (which would be a primitive type).
 
 We will observe what happens when index is 0, 1, 2 and 4.
 

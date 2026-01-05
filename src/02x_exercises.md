@@ -58,7 +58,7 @@ node triangle_area.js 5 3
 Create a file called `volume.js` and implement a program that will do perform the following.
 
 Write a program that will calculate the volume of a sphere.
-The program must allow the user to input the radius of the sphere.
+The program must allow the user to input the radius of the sphere using command line arguments.
 
 Use the following formula: \\(V = (4/3) * pi * r^3\\)
 

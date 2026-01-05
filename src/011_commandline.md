@@ -113,4 +113,3 @@ Make sure you take note of the following concepts and have a quick summar of wha
 
 3. Given the brief introduction of a filesystem, provide some concrete examples of a file. What are some file types you commonly open and how do you organise your files?
 
-**Next Up: Commands, Programs and Processes**

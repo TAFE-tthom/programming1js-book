@@ -180,4 +180,3 @@ Woohoo, using the command line
 
 There we go! We have now saved the text to a file and read it back out.
 
-**Next Up: NodeJS**.

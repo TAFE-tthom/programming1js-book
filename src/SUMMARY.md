@@ -81,6 +81,13 @@
   - [Internals](./08internals.md)
   - [Review](08review.md)
 
+- [Libraries and Node Modules]()
+  - [Organising Code]()
+  - [Creating Modules]()
+  - [Local and Published Modules]()
+  - [Exercises]()
+  - [Review]()
+
 ---
 
 - [Introduction to Web Development](./9webdevelopment.md)
@@ -108,6 +115,8 @@
   - [Client-Side Storage](./12storage.md)
   - [Exercises](./12exercises.md)
   - [Review](./12review.md)
+
+---
 
 - [Next Steps and Conclusion](./13conclusion.md)
   - [DevOps and Deployment](./13devops.md)

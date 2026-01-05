@@ -106,7 +106,7 @@ console.log(cupcake1.delicious);
 
 We have removed the fields specified at class scope, this is allowed because they are specified during the constructor. **However**, it is reasonable to have a **default** value and that having a field specified at the class level can make it a little more **readable**.
 
-**What about this `this`** keyword?
+**What about the `this`** keyword?
 
 The `this` keyword has a lot of utility within javascript and within the context above it is both addressing the ambiguity and also referring to the current reference.
 
