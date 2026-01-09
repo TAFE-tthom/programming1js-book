@@ -129,3 +129,24 @@ In terms of advantages of using arrow functions over regular functions.
 
 * Brevity, especially if the code is simple
 * Usage with `const` and ensuring that the function cannot be redefined.
+
+
+## Spread Operator
+
+Occasionally we may have an array which we want to utilise in a function call. However the function itself does not accept an array but instead accept 1 or more arguments. We can use the spread operator to extract each element from the array into a corresponding argument position.
+
+```js
+function maxOf3(a, b, c) {
+  // snipped  
+}
+
+const numbers = [4, 9, 7];
+
+const result = maxOf3(...numbers); //Returns 9
+```
+
+In the above we can observe a function call on `maxOf3` but we have `...numbers` prefixed to it. This will translate the function call to be.
+
+```js
+const result = maxOf3(numbers[0], numbers[1], numbers[2]);
+```

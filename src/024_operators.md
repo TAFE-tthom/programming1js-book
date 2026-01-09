@@ -112,7 +112,7 @@ Use the following reference here: [MDN Expressions and Operators](https://develo
 * `>` - Greater than symbol, example: `10 > 5` would return `true`
 * `>=` - Greater than or equal to symbol
 * `<=` - Less than or equal to symbol
-* `==` and `===` - Equality symbol, checks to see if two objects are the same, additional equal is ensuring type equality
+* `==` and `===` - Equality symbol, checks to see if two objects are the same, additional equal is ensuring type equality **Definitely leverage ===** over **==**.
 
 * `!=` and `!==` - Inequality symbol, checks to see if two objects are not the same.
 

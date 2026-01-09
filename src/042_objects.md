@@ -156,3 +156,20 @@ let { name, age } = person;
 
 The above snippet instantiates two name and age as variable assuming they are matching the **keys** inside the person object.
 
+## Spread Operator and Copying
+
+An effective way to copy objects, especially if a shallow clone will need to be constructed is to use the spread operator. Lets go through a simple example with the snippet below.
+
+```js
+let person = {
+  name: "Jeffrey",
+  age: 34
+};
+
+let copy = { ...person };
+```
+
+The snippet above takes the fields and values associated from `person` and constructs a new object. However this will correspond to a new allocation (just for the object itself, not for anything referenced inside).
+
+Afterwards, we are able to change particular fields if we may want them differ just by accessing the field as usual.
+
