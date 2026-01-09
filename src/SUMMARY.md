@@ -81,12 +81,10 @@
   - [Internals](./08internals.md)
   - [Review](08review.md)
 
-- [Libraries and Node Modules]()
-  - [Organising Code]()
-  - [Creating Modules]()
-  - [Local and Published Modules]()
-  - [Exercises]()
-  - [Review]()
+- [Libraries and Node Modules](./14nodemodule.md)
+  - [Creating Modules and Organising Code](./14createmodules.md)
+  - [Private and Published Modules](./14publish.md)
+  - [Review](./14review.md)
 
 ---
 

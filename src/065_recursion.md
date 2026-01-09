@@ -35,7 +35,7 @@ However there are drawbacks to recursion and you typically don't see it end up i
 
 ## Call Stack
 
-Javascript s a stack-based language so when a function or method is executed it is put onto a call-stack. The function or method being executed at the top of the stack is the most recently called method.
+Javascript is a stack-based language so when a function or method is executed it is put onto a call-stack. The function or method being executed at the top of the stack is the most recently called method.
 
 A function or method finishes executing once it has reached a return state or for `void` or function/method without a return statement, simply reaches the end of scope.
 
