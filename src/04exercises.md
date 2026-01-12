@@ -2,7 +2,7 @@
 
 ## Tasks
 
-### 1. RollerCoaster Height Checl
+### 1. RollerCoaster Height Check
 
 This program requires you to implement a function called `checkHeight`. Firstly, construct a file called `rollercoaster.js`, afterwards define the following function:
 
