@@ -76,8 +76,8 @@ Similarly with if statements, we can also nest loops within each other. This can
 We'll use the snippet below to examine nested loops.
 
 ```js
-for(int i = 0; i < 3; i++) {
-    for(int j = 0; j < 3; j++) {
+for(let i = 0; i < 3; i++) {
+    for(let j = 0; j < 3; j++) {
         console.log(i, j);
     }
 }
