@@ -34,11 +34,11 @@ When using the following shortcuts, you should be able to edit text quickly.
 
 ## Process Control Shortcuts
 
-You will likely encounter an infinite loop when programming or you want to stop inputting text into your process. These shortcuts provide a quick solution to some of these issues.
+It is very likely you will encounter an infinite loop when programming or you want to stop inputting text into your process. These shortcuts provide a quick solution to some of these issues.
 
 * `CTRL+C` - Interrupts the process.
 
-* `CTRL+D` - When a process is executing, it may await for input from the user however by using this shortcut it will close `stdin`.
+* `CTRL+D` - When a process is executing, it may await input from the user however by using this shortcut it will close `stdin`.
 
 * `CTRL+L` - It will clear the screen.
 

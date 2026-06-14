@@ -42,7 +42,7 @@ If so, it does not matter if `hasMessages` is `true` or `false`.
  
 ### Continue
 
-`continue` allows the code to go to next iteration. For loop statements where a particualr branch shouldn't be computed, this can be a useful tool.
+`continue` allows the code to go to next iteration. For loop statements where a particular branch shouldn't be computed, this can be a useful tool.
 
 ```js
 let numberOfMessages = getMessageCount();
@@ -63,7 +63,7 @@ The above snippet outlines a case where given a message that specifies `"IGNORE"
 
 ### Using Labels
 
-We'll expand on the scenario from **Continue** but swap our `continue` for `break` in this case. When using `labels` within javascript, we usually have a point that we want to jump to that a nested branch has outlined.
+We'll expand on the scenario from **Continue** but swap our `continue` for `break` in this case. When using `labels` within JavaScript, we usually have a point that we want to jump to that a nested branch has outlined.
 
 However, we should outline the behavioural difference between `break` without a label and a `break` with a label. 
 

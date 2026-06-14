@@ -7,8 +7,8 @@ A test-case scenario is made of the following components.
 
 * Description of the  test
 * Methodology/Method
-* Preconditions
-* Postconditions
+* Pre-Conditions
+* Post-Conditions
 * Expectations
 
 Each part serves a purpose for ensuring that the test is not contaminated and the scope of the test is well defined. Without a clear goal/description of what is being tested, it may lead to a test site which is unsuitable or useless.
@@ -21,7 +21,7 @@ This is explored further within the **vitest** section of this chapter.
 
 ## Blackbox Testing
 
-User centric testing, without knowledge of the internals, input is given and compared to match the output of the program. This is usually linked to your E2E testing, where you want to testing from one end and see if it reaches and meets the expectation at the other.
+User centric testing, without knowledge of the internals, input is given and compared to match the output of the program. This is usually linked to your **E2E** (End To End) testing, where you want to testing from one end and see if it reaches and meets the expectation at the other.
 
 A form of blackbox testing that can be conducted easily is by constructing input files that are given to a program. In additional this is typically combined with `diff` and a file which contains the expected output that it will be checked against.
 
@@ -33,7 +33,7 @@ You can use the following code snippet.
 [user@hostname project] diff test.output test.out
 ```
 
-To breakdown the above snippet.
+To break-down the above snippet.
 
 * The first command is running `main.js` using node
 * Instead of the user typing in input using the keyboard, they are using `test.in` instead

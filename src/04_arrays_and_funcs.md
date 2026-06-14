@@ -1,7 +1,7 @@
 
 *Estimated Time Required: **10 hours***📅🕙
 
-# Arrays, Objects and Functions
+# Arrays, Objects, and Functions
 
 After wrapping up control flow we are now going to dive into abstractions for aggregating and composing data. In addition, this chapter will go into functions and modularising code. 
 
@@ -16,7 +16,7 @@ To reiterate, we will go through the following topics.
 * Arrays
 * Objects
 * Functions
-* Paramters and Return Values
+* Parameters and Return Values
 * Indirection and References
 * Algorithms
 

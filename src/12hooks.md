@@ -48,9 +48,9 @@ function Counter(props): ReactElement {
 
 ## `useEffect` and updating components
 
-When loading or handling data from an API, the time it takes to return is unknown, it is a case where we have to handle a situation when a state change is required but may be triggered after rendering or during rendering.
+When loading or handling data from an API, the time it takes to return is unknown. It is a case where we have to handle a situation when a state change is required but may be triggered after rendering or during rendering.
 
-To do this, we have to set up a call back and also specify dependency object. 
+To do this, we have to set up a callback and specify dependency object. 
 
 Let's take a look at the following component and how it works.
 
@@ -78,7 +78,7 @@ function NewsLetter() {
 
 `useRef` is used to construct a reference to a value that is likely to not require re-rendering. This places the object outside the context of react but can be interacted with react.
 
-Some good examples for using this feature is to ensure that DOM elements are not reconstructed, this is useful for canvas, video and audio elements where the playback or rendering is handled by those elements themselves.
+Some good examples for using this feature is to ensure that DOM elements are not reconstructed, this is useful for canvas, video, and audio elements where the playback or rendering is handled by those elements themselves.
 
 Within a component, we are able to hook into a component/element with ref and utilise mutate the properties without it needing to trigger a re-render for the data to be updated.
 

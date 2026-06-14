@@ -1,16 +1,16 @@
 # DevOps and Deployment
 
-Developer Operations (DevOps) is part of the software development process in which as part of working on the project, we have tools, scripts and utilities that assist with monitoring, testing and deploying the application.
+Developer Operations (DevOps) is part of the software development process in which as part of working on the project, we have tools, scripts, and utilities that assist with monitoring, testing, and deploying the application.
 
 ## Continuous Integration and Continuous Delivery
 
 Depending on the service you are using to store your projects. You may have access to an automated workflow system within it. Within `Github`, they allow you to enact workflows that are described using a `.yml` file and exist with `.github/workflows` folder within the repository.
 
-The workflow below mixes both continuous integration and delivery into one. The integraton is the part where the features of the project are integrated into `main` and that the test cases and builds are automated and uploaded to github releases.
+The workflow below mixes both continuous integration and delivery into one. The integration is the part where the features of the project are integrated into `main` and that the test cases and builds are automated and uploaded to GitHub releases.
 
 ### Workflow
 
-By leveraging a workflow, we are able to create a workflow that will automatically trigger when a particular branch is comitted it.
+By leveraging a workflow, we are able to create a workflow that will automatically trigger when a particular branch is committed it.
 
 To define a workflow, you can start with the following snippet.
 
@@ -55,7 +55,7 @@ jobs:
 
 ```
 
-There is a lot going on with the above but the workflow is designed to have steps broken down logically and be usable with any existing vite project with a default configuration.
+There is a lot going on with the above but the workflow is designed to have steps broken down logically and be usable with any existing `vite` project with a default configuration.
 
 Here is the breakdown of the workflow above.
 
@@ -72,19 +72,19 @@ Here is the breakdown of the workflow above.
  * Installs the dependency for the project
  * Runs the tests as part of the build itself
  * Builds the project so it is ready to be distributed
- * Uploads the preview to the releases on github
+ * Uploads the preview to the releases on GitHub
 
-Without needing to do these actions specifically everytime, we are able to describe the process and specify the commands to execute within it to achieve the effect.
+Without needing to do these actions specifically every time, we are able to describe the process and specify the commands to execute within it to achieve the effect.
 
 
 
 ## Deployment
 
-Deployment can come in different forms, while the CI/CD component does handle that to some degree, we also need to consider how we can manually deploy a website.
+Deployment can come in different forms, while the **CI/CD** component does handle that to some degree, we also need to consider how we can manually deploy a website.
 
 ### Deploying using ssh
 
-This part assumes you have VPS and a domain name associated or an equivalent setup. You are able to deploy to a a virtual private server (VPS) if as a user by logging into it.
+This part assumes you have VPS and a domain name associated or an equivalent setup. You are able to deploy to a **virtual private server** (VPS) if as a user by logging into it.
 
 `ssh` is a very power command that allows you login to a remote server and interact with it via the shell.
 
@@ -92,12 +92,12 @@ To simply copy a file, compressed as it were, we are able to use `scp` to achiev
 
 However, two simple methods to achieve setting up your server with the files necessary.
 
-* Using `curl` or `wget` to retrieve the build from Github Releases or an equivalent.
+* Using `curl` or `wget` to retrieve the build from GitHub Releases or an equivalent.
 
-* Using `scp`, `rsync` or `sftp` to copy the data from your own pc to the remote server. Simply put with `scp` you can do: `scp dist.zip username@domain:~/`
+* Using `scp`, `rsync` or `sftp` to copy the data from your own PC to the remote server. Simply put with `scp` you can do: `scp dist.zip username@domain:~/`
 
 The `scp` snippet will copy the file over to the remote server.
 
 When using `ssh`, you can `unzip` the file within the directory. Depending on the setup, you may want to move the contents of `dist` to `/var/www` for the relevant `webserver` such as `apacahe` or `nginx` to start using those files.
 
-The copying method may require `root` priviledges in your situation.
+The copying method may require `root` privileges in your situation.

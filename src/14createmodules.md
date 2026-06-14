@@ -1,20 +1,20 @@
 # Creating Modules and Organising Code
 
-We should be well accusomted to `npm init` by now and using some of the basic `npm` commands. While we won't be really deviating too much outside of that we do need to understand how all these modules work.
+We should be well accustomed to `npm init` by now and using some of the basic `npm` commands. While we won't be really deviating too much outside of that we do need to understand how all these modules work.
 
-## Creating a module
+## Creating a Module
 
 Let's start with a review of creating a node module.
 
 1. Create a folder and initialise the package with `npm init`
 
-2. Make sure the following inforation is outlined within `package.json` file.
+2. Make sure the following information is outlined within `package.json` file.
 
-  * name - Name of your package
-  * main - Entry point of your package (refer to a javascript file)
-  * version - Base is 1.0.0 however you can refer to another versioning system
-  * license - You have specified an appropriate license
-  * author - You are author of the module
+  * `name` - Name of your package
+  * `main` - Entry point of your package (refer to a JavaScript file)
+  * `version` - Base is 1.0.0, however, you can refer to another versioning system
+  * `license` - You have specified an appropriate license
+  * `author` - You are author of the module
 
   It is worth noting that `repository` should also be included in this well if you have a git repo already set up.
 
@@ -23,7 +23,7 @@ Let's start with a review of creating a node module.
 3. Make sure the file you want to be the main export is the one specified in `main`.
 
 
-### Testing your module and scenario
+### Testing Your Module and Scenario
 
 We will go through a scenario of building a module. Our scenario is to include the following files into our codebase using.
 
@@ -90,7 +90,7 @@ class RandomIntegerIter {
 
 When writing a library where we want to make classes or functions (or even variables) available. We need to use `export`.
 
-For `minmax.js`, we would include `export function` in place of `function` or simple `export`. for `randomiter.js` we would have `export class` where there is normally just `class`.
+For `minmax.js`, we would include `export function` in place of `function` or simple `export`. For `randomiter.js` we would have `export class` where there is normally just `class`.
 
 
 ```js
@@ -108,9 +108,9 @@ export class RandomIntegerIter {
 }
 ```
 
-However, this simply exports the function and classes from the file to be accessible by others. We now need to define an `index.js` file which will be our entrypoint (this is a bit of a convention but does not need to be strictly adhered to).
+However, this simply exports the function and classes from the file to be accessible by others. We now need to define an `index.js` file which will be our entry-point (this is a bit of a convention but does not need to be strictly adhered to).
 
-Within `index.js`, we want to re-export any function, class or variable.
+Within `index.js`, we want to reexport any function, class, or variable.
 
 ```js
 import { RandomIntegerIter } from './randomiter';
@@ -123,4 +123,4 @@ export default {
   
 ```
 
-By using `export default` and exporting an object associated (`{ ... }`), we are able to indicate what we are re-exporting.
+By using `export default` and exporting an object associated (`{ ... }`), we are able to indicate what we are reexporting.

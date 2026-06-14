@@ -17,7 +17,6 @@ Windows (Powershell):
 
 ```
 PS C:\Users\username>
-  
 ```
 
 
@@ -25,20 +24,19 @@ Linux (Bash):
 
 ```
 [user@hostname ~]$
-
 ```
 
 This is the usual first screen that many experienced computer users who have had to use the command line will be familiar with. It is where you can start writing commands and navigating the filesystem.
 
 ### What are commands?
 
-Commands are programs that your shell has access to and do not require knowledge in where they live. You can add new commands to your computer and even remove them if you want however that is likely unadvisable.
+Commands are programs that your shell has access to and do not require knowledge in where they live. You can add new commands to your computer and even remove them if you want however that is likely inadvisable.
 
 This now gets into the details of what a **Program** and **Process** is.
 
-* *Program* - This is a file that holds computer instructions native to the cpu and operating system. Simply, it is a container of instructions that can be loaded and executed. (We will expand this definition later on to encompass different kinds of programs).
+* *Program* - This is a file that holds computer instructions native to the CPU and operating system. Simply, it is a container of instructions that can be loaded and executed. (We will expand this definition later on to encompass different kinds of programs).
 
-* *Process* - A process is an *instance* of a *Program*. In the sense that, the same program can be ran multiple-times and usually concurrently and that each time we run a program, we are creating a process in which it executes the instructions that the program holds.
+* *Process* - A process is an *instance* of a *Program*. In the sense that, the same program can be executed multiple-times and usually concurrently and that each time we run a program, we are creating a process in which it executes the instructions that the program holds.
 
 ### Commanding the filesystem
 
@@ -63,7 +61,7 @@ The following will be using a unix shell, it is expected that the same commands 
 
 **Let's start!**
 
-The `~` represents out home directory, usually where the the current `user` will store their files. We will find out what the *path* is by using `pwd`.
+The `~` represents out home directory, usually where the current `user` will store their files. We will find out what the *path* is by using `pwd`.
 
 ```
 [user@hostname ~]$ pwd

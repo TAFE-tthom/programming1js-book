@@ -72,7 +72,7 @@ We have made some significant changes here. `x` now starts at 9, the condition i
 As an **experiment!** What happens if you forget `x -= 1;` or `x += 1` in either method? Does the loop terminate? 💻
 
 **Important**
-If you happen to have an non-terminating loop, use the shortcut `CTRL+C` which will send an interrupt signal to the process in your terminal.
+If you happen to have a non-terminating loop, use the shortcut `CTRL+C` which will send an interrupt signal to the process in your terminal.
 
 
 

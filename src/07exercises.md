@@ -12,7 +12,7 @@ You cannot use Objects as a Map to create an associative array, you need to comp
 
 * `constructor()` - Creates an empty `ArrayMap`. Should initialise a key array and a values array.
 
-* `static withArrays(keys, values)` - Creates an ArrayMap with the keys and values arrays.
+* `static withArrays(keys, values)` - Creates an `ArrayMap` with the keys and values arrays.
 
 * `getElement(key)` - Gets an element by its key, if the key exists within the `ArrayMap`, you will need to return the value associated with that key.
 
@@ -70,7 +70,7 @@ If index is < 0 or >= Size, the method should return null.
 You have been tasked with implementing a queue data structure that will hold
 onto integers given to it.
 
-#### What is a queue?
+#### What Is a Queue?
 
 "Have you ever linked up at a bank or for food?"
 

@@ -26,11 +26,11 @@ By doing this, you have at least gained knowledge of what you don't know and wil
 
 Some useful notes though.
 
-* Consider at least two passes, one quick pass and the other a more thorougher one
+* Consider at least two passes, one quick pass and the other a thorougher one after.
 
-* If you find yourself stuck on a paragraph or passage, break the loop, this could be down to information density in which you may need to process through notetaking.
+* If you find yourself **stuck** on a paragraph or passage. **Try to break the loop!**. It is easy to be overwhelmed with information density and it is perfectly normal to require time to process it and understand it.
 
-* Be able to resume from where you were left off. Book mark the page using the browser's capabilities or print pages so you can annotate them. Make it accessible for yourself.
+* Be able to **resume from where you were left off**. **Bookmark** the page using your browser or print pages so you can annotate them. Make it accessible for yourself.
 
 ## System Requirements
 
@@ -44,6 +44,7 @@ Please be aware of the following things:
   * Linux
   * FreeBSD
   * Something else entirely!
+
 
 * Hardware Architecture of your device, while it likely won't make a meaningful difference, being aware of it when setting up will help. You could be using
   * x86 (x86_64, AMD64)
@@ -62,4 +63,4 @@ Please be aware of the following things:
 
 After reviewing the above and seeing if you meet at least one of each category, you can start.
 
-## The journey starts
+## Time To Start!

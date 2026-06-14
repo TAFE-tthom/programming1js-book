@@ -1,23 +1,23 @@
 # What's Next?
 
-You have reached the end of the book, where I do hope you have successfully completed your projects! I sincerely hope you feel like you have grown while working on each chapter and have learned something new about javascript along the way.
+You have reached the end of the book, where I do hope you have successfully completed your projects! I sincerely hope you feel like you have grown while working on each chapter and have learned something new about JavaScript along the way.
 
-While your time with javascript will likely not end with this book you have reached what it can provide (for now).
-
-
-However, there is always time to look towards another and a natural extension to Javascript is Typescript.
+While your time with JavaScript will likely not end with this book you have reached what it can provide (for now).
 
 
-## Why typescript?
+However, there is always time to look towards another and a natural extension to JavaScript is TypeScript.
+
+
+## Why TypeScript?
 
 Reaching the point where you are able to develop programs which have many layers and moving parts.
 
-You have observed with using some tooling to help with QA, this same tooling exists at a language leverl and can assist with writing a more robust application and reduce the surface areas of issues that can arise.
+You have observed with using some tooling to help with QA, this same tooling exists at a language level and can assist with writing a robust application and reduce the surface areas of issues that can arise.
 
 
-## Other extensions
+## Other Extensions
 
-While a programming language is a tool to explore computation, you should be at a point to explore other kinds of languages, tools and environments.
+While a programming language is a tool to explore computation, you should be at a point to explore other kinds of languages, tools, and environments.
 
 To help categorise for certain purposes.
 
@@ -43,14 +43,14 @@ For the **Data Scientist**, look into the following.
 * Python or R
 * SQL.js
 * MathJS
-* Processing CSV, XLS and other data forats
+* Processing CSV, XLS, and other data formats
 * D3 for visualising data along with learning how SVGs work
 
 
 For the **Embedded Systems Developer**, look into the following.
 
 * Tessel and JerryScript
-* Writing a virtual machine in Javascript, Instruction decoding and memory model
+* Writing a virtual machine in JavaScript, Instruction decoding and memory model
 * WebSockets, WebRTC, WebSerial, WebMIDI, WebNFC and WebBluetooth
 
 

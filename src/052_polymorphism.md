@@ -1,6 +1,6 @@
 # Polymorphism and Mixins
 
-The phrase polymorphism can be considered a little strange within javascript. However it can be considered a bit of an `ad-hoc` approach to polymorphism. Due to javascript being a dynamically typed language, it is possible to associate methods and functions on fields that are expected to exist.
+The phrase polymorphism can be considered a little strange within JavaScript. However, it can be considered a bit of an `ad-hoc` approach to polymorphism. Due to JavaScript being a dynamically typed language, it is possible to associate methods and functions on fields that are expected to exist.
 
 In addition `Mixins` are also a method to compose a new class. 
 
@@ -45,7 +45,7 @@ The above snippet demonstrates how `makeNoise` can be used with three different 
 
 ## Mixins
 
-A major limitation of inheritance within javascript is that it can only inherit from 1 other type. This can be quite limiting, a way to address this shortcoming is to associate methods that exist with an established class.
+A major limitation of inheritance within JavaScript is that it can only inherit from 1 other type. This can be quite limiting, a way to address this shortcoming is to associate methods that exist with an established class.
 
 ```js
 class User {
@@ -71,11 +71,11 @@ let user = new User('alice_ice');
 console.log(user.isAdmin()); //true
 ```
 
-We are able to observe that the output was `true`, it has overriden the initially assigned method for the type. The idea of a mixin is that we can construct and add capabilities to a type afterwards.
+We are able to observe that the output was `true`, it has overridden the initially assigned method for the type. The idea of a `Mixin` is that we can construct and add capabilities to a type afterwards.
 
 ### Wait... what are classes?
 
-A `class` is usually described as **syntatic sugar** which is mostly true because the way a class would represented was a `function`, where the `constructor` was the function.
+A `class` is usually described as **syntactic sugar** which is mostly true because the way a class would be represented was a `function`, where the `constructor` was the function.
 
 
 ```js

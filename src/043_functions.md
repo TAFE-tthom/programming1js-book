@@ -1,8 +1,8 @@
 # Functions
 
-Functions are an incredibly flexible construct in Javascript (and any programming language) that allow us to modularise our code. They serve the purpose or reducing repetition, creating clarity and effectively categorising logic.
+Functions are an incredibly flexible construct in JavaScript (and any programming language) that allow us to modularise our code. They serve the purpose or reducing repetition, creating clarity and effectively categorising logic.
 
-There are a few ways to create a function in javascript. However, we will focus on the most intuitive version.
+There are a few ways to create a function in JavaScript. However, we will focus on the most intuitive version.
 
 The pattern for a function follows:
 
@@ -13,7 +13,7 @@ function name_of_function(parameters) {
 }
 ```
 
-`function` is a keyword that is reserved in javascript, after it has been specified, it will need a symbol associated with it which correlates to the name of the function.
+`function` is a keyword that is reserved in JavaScript, after it has been specified, it will need a symbol associated with it which correlates to the name of the function.
 
 ## Parameters
 
@@ -27,10 +27,10 @@ function printingMessage(prefix, message) {
 }
 ```
 
-* `prefix` and `message` are paramters
+* `prefix` and `message` are parameters
 * Both parameters are used within the function (similar to variables declared) but the role parameters play is to represent the data given to the function as arguments.
 
-Looking at the callsite of the `printingMessage` function, we can see the arguments `"Admin"` and `"Restarting network"`.
+Looking at the **call-site** of the `printingMessage` function, we can see the arguments `"Admin"` and `"Restarting network"`.
 
 ```js
 printingMessage("Admin", "Restarting network");
@@ -47,7 +47,7 @@ The above snippet shows the variable `role` used in place for an argument in the
 
 ## Returning Data
 
-Every function can `return` a value (from a variable, literal or result from an expression) or may only be used to do an action (like print to the screen). 
+Every function can `return` a value (from a **variable**, **literal**, or result from an **expression**) or may only be used to do an action (like print to the screen). 
 
 ```js
 function addTwo(x, y) {
@@ -55,7 +55,7 @@ function addTwo(x, y) {
 }
 ```
 
-The above function is going to add the values stored in x and y together and then return them.
+The above function is going to add the values stored in `x` and `y` together and then return them.
 
 So, after defining a function, how can we use them? Using the example above, we can make a function call. This invokes the function to perform the statements enclosed inside them.
 
@@ -74,7 +74,7 @@ Refer to the following link for further information [MDN function](https://devel
 
 ## Arrow Functions and Anonymous Functions
 
-Functions within javascript and other programming languages can be assigned to variables. This will be covered in more detail in **Chapter 7, Callbacks** however it is valuable to at least see their construction and usage.
+Functions within JavaScript and other programming languages can be assigned to variables. This will be covered in more detail in **Chapter 7, Callbacks** however it is valuable to at least see their construction and usage.
 
 As part of a variable initialisation statement, we are able to construct an **anonymous** function that is then assigned to a variable.
 
@@ -90,7 +90,7 @@ Given the initial outline from this chapter, this can seem unintuitive as they s
 
 With acknowledgement that we can create **anonymous** functions, we are able to create what are called **arrow functions** which are a shorthand version of these.
 
-Re-writing the snippet above, we can write the following.
+Rewriting the snippet above, we can construct the following.
 
 ```js
 let hello = (msg) => console.log("Hello! " + msg);
@@ -114,7 +114,7 @@ let lengthOfString = (s) => s.length;
 let len = lengthOfString("Trackwork"); // 9
 ```
 
-Of course, as outlined, as soon as we want the arrow function to be multi-line, we need to use a `return` statement.
+Of course, as outlined, as soon as we want the arrow function to be **multiline**, we need to use a `return` statement.
 
 
 ```js
@@ -133,7 +133,7 @@ In terms of advantages of using arrow functions over regular functions.
 
 ## Spread Operator
 
-Occasionally we may have an array which we want to utilise in a function call. However the function itself does not accept an array but instead accept 1 or more arguments. We can use the spread operator to extract each element from the array into a corresponding argument position.
+Occasionally we may have an array which we want to utilise in a function call. However, the function itself does not accept an array but instead accept 1 or more arguments. We can use the spread operator to extract each element from the array into a corresponding argument position.
 
 ```js
 function maxOf3(a, b, c) {

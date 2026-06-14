@@ -1,11 +1,10 @@
 # Operators and Expressions
 
-We have observed some basic operators in use. The most common kind of operator you will encounter are **binary operators**. However, there are two other kinds of operators you will use.
+We have observed some basic operators in use. The most common kind of operator you will encounter are **Binary operators**. However, there are two other kinds of operators you will use are **Unary operators**, **Ternery operators**
 
-* **Unary operator**
-* **Ternery operator**
+## Unary Operators
 
-The logic behind each one is that they are referring to the number of elements they are operting on. For a **unary** operator, it is needing one variable.
+The logic behind each one is that they are referring to the number of elements they are operating on. For a **unary** operator, it is needing one variable.
 
 A common unary operator is `!`, which is applied to get the opposite result of a boolean expression.
 
@@ -21,6 +20,8 @@ i++;
 
 In the snippet above, you will observe the `++` unary operator that will increment the value by 1 (i being changed from 10 to 11).
 
+## Binary Operators
+
 **Binary** operators will use the element on the *left* and the element on the *right*. This is common as most operators we use will be of this form. However, depending on the data type, they take on different behaviours.
 
 Example:
@@ -33,7 +34,7 @@ let z = y * 2;
 
 The above snippet demonstrates `+` addition operator for numbers and `*` multiplication operator. Both work on the left and right operands.
 
-The above 
+## Ternary Operators
 
 **Ternary** operators will appear in a particular instance where they use the `?` and `:` symbols together.
 
@@ -51,7 +52,7 @@ The above snippet will evaluate if `mark` is greater than or equal to `50` and a
 
 Depending if the variables are strings or numbers will change what kind of operation we will get and if it is even supported.
 
-Using the code snipept below:
+Using the code snippet below:
 
 ```js
 let numberX = 10; // Number
@@ -118,7 +119,7 @@ Use the following reference here: [MDN Expressions and Operators](https://develo
 
 ## Printing and Interpreting data
 
-Within javascript, we will want to print data to standard output and interpret strings into integers and floats. Javascript provides the capabilities with the following functions:
+Within JavaScript, we will want to print data to standard output and interpret strings into integers and floats. JavaScript provides the capabilities with the following functions:
 
 * `console.log` - Allows you to print to standard output (terminal screen), `console.log('Hello!')` as an example.
 
@@ -138,6 +139,7 @@ Notice that there are two different ways to interpret the string and translate i
   * `"5.0"`
 
 Consider what the behaviour is between the two and what **number sets** they relate to.
+
 
 Please refer to the following documentation at [MDN Expressions and Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators)
 

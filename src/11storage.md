@@ -2,12 +2,12 @@
 
 It is one thing to handle requests and keep the data in memory, it is another to keep data beyond an instance/run. Persistent data is required for any production server application.
 
-This can be handled by using file IO in which data can be saved and recorded into that file. However, the standard practice is to use a database that will hold the data and manage writing and reading the data.
+This can be handled by using file `IO` in which data can be saved and recorded into that file. However, the standard practice is to use a database that will hold the data and manage writing and reading the data.
 
 
 ## Using a database and SQL
 
-You can use the following sequelize module to interact with an sql database. Without needing to know much about SQL, you can create a sql database through javascript by constructing the tables and entries through javascript.
+You can use the following **Sequelize** module to interact with an SQL database. Without needing to know much about SQL, you can create a SQL database through javascript by constructing the tables and entries through JavaScript.
 
 It requires the following stages to be performed.
 
@@ -27,7 +27,7 @@ Afterwards, you should be able construct a connection and database mode.
 
 ### Make a connection and define a model
 
-Using the scenario of a `todo` application and needing to keep a list of tasks, along with their id, title, description and completion state. We will need to start with defining a new `sequelize` object.
+Using the scenario of a `todo` application and needing to keep a list of tasks, along with their id, title, description, and completion state. We will start with defining a new `sequelize` object.
 
 ```js
 const sequelize = new Sequelize({
@@ -65,14 +65,14 @@ const Task = sequelize.define(
 );
 ```
 
-The above snippet defines the type among with matching the fields to the type that SQL unuderstands. In this instance, the fields mostly resemble those we are familiar with in Javascript.
+The above snippet defines the type among with matching the fields to the type that SQL unuderstands. In this instance, the fields mostly resemble those we are familiar with in JavaScript.
 
 After the definition, you will need to `sync` the model with the database. You will need to use `await Task.sync()`.
 
 
 ### Writing and Reading
 
-Writing and reading from the database will need to be done through `async/await` syntax and the API that `sequelize` provides. The convention that sequelize leans into is by using `find` for retrieval and `.save()` for writing on a newly instantiated object.
+Writing and reading from the database will need to be done through `async/await` syntax and the API that `sequelize` provides. The convention that **Sequelize** leans into is by using `find` for retrieval and `.save()` for writing on a newly instantiated object.
 
 ### Writing
 
@@ -85,7 +85,7 @@ const task = Task.build({
 });
 ```
 
-Since prior, `id` and `completed` are autoincrement (for `id`) and have a default value (for `completed`), it is not necessary to input this data. It is optional regardless though.
+Since prior, `id` and `completed` are **auto-increment** (for `id`) and have a default value (for `completed`), it is not necessary to input this data. It is optional regardless though.
 
 We are able to save the data by using `.save()` method on `task`.
 
@@ -107,7 +107,7 @@ const task = await Task.findByPk(taskId);
 It will use the model type and the static method associated with it.
 
 
-You can use `findAll` or just `find` to query the relevant table. WIthout any criteria specified, it will retrieve all the data, however you will need to specify `where` within the object to create predicates and exclude certain pieces of data.
+You can use `findAll` or just `find` to query the relevant table. Without any criteria specified, it will retrieve all the data, however you will need to specify `where` within the object to create predicates and exclude certain pieces of data.
 
 ```js
 const results = await Task.findAll()

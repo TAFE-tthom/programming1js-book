@@ -1,10 +1,10 @@
 # Internals
 
-This segment here is a brief discussionn on some of the internals of javascript and the virtual machines. Some of these concepts may be more specific to a particular kind of implementation of the virtual machine such a V8 which is used by Chrome and NodeJS.
+This segment here is a brief discussion on some of the internals of JavaScript and the virtual machines. Some of these concepts may be more specific to a particular kind of implementation of the virtual machine such a V8 which is used by Chrome and NodeJS.
 
 ## Memory Regions
 
-Memory regions is an idea that carries over how most applications, that when compiled will orgnaise memory allocations.
+Memory regions is an idea that carries over how most applications, that when compiled will organise memory allocations.
 
 ### What is a memory allocation
 
@@ -35,9 +35,9 @@ A guideline here is that:
 
 * Variables which are initialised to values in global memory space are assumed to be in `Data/Global` and are known at parse time. However, it reasonable to also view these as heap allocated as well.
 
-Within javascript, it is reasonable to assume that any reference type is going to be heap allocated. These are run-time allocated types and while certain pieces of data can be known ahead of time and may exist in `Data/Global`, the difference between these two regions, in terms of their address space is not significant.
+Within JavaScript, it is reasonable to assume that any reference type is going to be heap allocated. These are run-time allocated types and while certain pieces of data can be known ahead of time and may exist in `Data/Global`, the difference between these two regions, in terms of their address space is not significant.
 
-* Any source code that is known at parse time, should be considered read-only and in the **code section**. **HOWEVER**, this is mostly to think of the process memory regions in a common model, in reality, the source code that is interpreted ends up being re-evaluated and optimised by the virtual machine at runtime if certain **assumptions** can be held.
+* Any source code that is known at parse time, should be considered read-only and in the **code section**. **HOWEVER**, this is mostly to think of the process memory regions in a common model. In reality, the source code that is interpreted ends up being reevaluated and optimised by the virtual machine at runtime if certain **assumptions** can be held.
 
 
 
@@ -55,7 +55,7 @@ let obj1 = { name: 'Jeff', details: { /* details here */ }};
 obj1 = { name: "Alice", details: { /* details here */ }}
 ```
 
-The above snippet is a re-assignment of `obj1` after its initial assignment, if there are no other variables assigned to what `obj1` was assigned to an object with the name `'Jeff'`, it will be cleaned up by the **garbage collector**. This is because there are no more references to that object.
+The above snippet is a reassignment of `obj1` after its initial assignment, if there are no other variables assigned to what `obj1` was assigned to an object with the name `'Jeff'`, it will be cleaned up by the **garbage collector**. This is because there are no more references to that object.
 
 ```js
 let obj1 = { name: 'Jeff', details: { /* details here */ }};
@@ -72,15 +72,15 @@ The above scenario is different, `obj2` gets assigned to the reference that cont
 
 ### Why is it important to understand garbage collection?
 
-When writing software with javascript or any language with a managed memory model, there can be side-effects that require the developer to address. In this case, issues that are triggered by the garbage collector typically show up in **realtime applications**, these being games or anything where the garbage collector can **interrupt** execution to remove old allocations.
+When writing software with JavaScript or any language with a managed memory model, there can be side-effects that require the developer to address. In this case, issues that are triggered by the garbage collector typically show up in **realtime applications**, these being games or anything where the garbage collector can **interrupt** execution to remove old allocations.
 
-This interruption is usually referred to as a **stop the world** interruption. The execution is paused while the garbage collector cleans up. Within a realtime application that has a certain framerate to maintain, the pause of execution can result in dropping frames, reduction in framerate or poor experience where it feels like it stutters every now and then.  
+This interruption is usually referred to as a **stop the world** interruption. The execution is paused while the garbage collector cleans up. Within a real-time application that has a certain frame-rate to maintain, the pause of execution can result in dropping frames, reduction in frame-rate or poor experience where it feels like it stutters every now and then.  
 
 ## JIT - Just In Time Compilation
 
 A concept to understand and was mentioned in a previous chapter is the idea of compilation. With languages that leverage a compiler to construct an executable file, this compilation process translates the source code into machine code.
 
-However, the machine code may still not resemble the CPU architecture still. This is relevant for any programming language that can target a virtual machine as its compilation target or has a virtual machine as its runtime. Javascript fits this case, while it does get compiled by the user, it does get compiled by the virtual machine... some times, it will re-evaluate the output as well.
+However, the machine code may still not resemble the CPU architecture still. This is relevant for any programming language that can target a virtual machine as its compilation target or has a virtual machine as its runtime. JavaScript fits this case, while it does get compiled by the user, it does get compiled by the virtual machine... some times, it will reevaluate the output as well.
 
 When your source code is interpreted by the virtual machine, it is translated to a bytecode for its own internal virtual machine. This bytecode is then translated into machine code.
 

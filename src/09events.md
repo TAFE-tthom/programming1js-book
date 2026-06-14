@@ -1,6 +1,6 @@
 # Javascript Event Handling
 
-Events are attributes on html elements that allow a bit of javascript code (normally a function assigned to it) to be triggered. A common event that is assigned to elements is `onclick`.
+Events are attributes on HTML elements that allow a bit of JavaScript code (normally a function assigned to it) to be triggered. A common event that is assigned to elements is `onclick`.
 
 Below is an example of this event being assigned.
 
@@ -10,7 +10,7 @@ Below is an example of this event being assigned.
 
 When a user click's the button, the `sendMessage()` function is called. You've probably seen a button like this when using an email client and sending an email. 
 
-The `onclick` event can be assigned to elements and these event attributes can be assigned by the javascript as well through `document.getElementById` or some other querying method.
+The `onclick` event can be assigned to elements and these event attributes can be assigned by the JavaScript as well through `document.getElementById` or some other querying method.
 
 You are encouraged to look into the following events:
 

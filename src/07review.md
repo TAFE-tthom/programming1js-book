@@ -1,6 +1,6 @@
 # Review
 
-Data structures are a major moment for programmers. Building linked lists, stacks and queues reveals the mechanics of memory and how reference types work.
+Data structures are a major moment for programmers. Building linked lists, stacks, and queues reveals the mechanics of memory and reference type semantics.
 
 * What you should know and understand
   * How references work and how it relates to aliasing mentioned earlier
@@ -8,7 +8,7 @@ Data structures are a major moment for programmers. Building linked lists, stack
   * Understand pseudo-code
   * Different sorting and searching algorithms
 
-* What you shoule be able to apply
+* What you should be able to apply
   * Build a linked data structure such as a linked list
   * Implement a variation of a linked data structure such as a stack or queue
   * Implementing a sorting algorithm

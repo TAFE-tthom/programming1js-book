@@ -3,7 +3,7 @@
 With any programming language, we typically want to translate the keystrokes we input into our text editor that we will use to save the file that stores them.
 
 
-This is no-different with Javascript.
+This is no-different with JavaScript.
 
 
 Using the text editor of your choice, make sure you get familiar with the basics
@@ -18,7 +18,7 @@ Prior to executing code, make sure you have saved your files so when the interpr
 
 ## Okay! But what is a source file?
 
-A source file is typically a text file that will contain **source code**. The kind of **source code** is going to be of the javascript variety. As per convention, when we save a javascript file, we should use the `.js` extension.
+A source file is typically a text file that will contain **source code**. The kind of **source code** is going to be of the JavaScript variety. As per convention, when we save a JavaScript file, we should use the `.js` extension.
 
 By using the appropriate extension, this will give a hint to the operating system about what app to open it with. Hopefully it should default to your text editor however you can adjust this setting for your own benefit.
 
@@ -26,11 +26,11 @@ By using the appropriate extension, this will give a hint to the operating syste
 
 In our current context? We will write code and then execute it using `nodejs`. Later on, we will see how it will take on a different roles and purposes.
 
-The tooling in the javascript ecosystem 
+The tooling in the JavaScript ecosystem 
 
 * Transform the code written into more optimised and minified code
-* Create a superset of Javascript called Typescript
-* Embed XML directly into Javascript for building web applications (`.jsx` files)
+* Create a superset of JavaScript called TypeScript
+* Embed XML directly into JavaScript for building web applications (`.jsx` files)
 * Much more...
 
 For our purpose and what is typically common regardless of what is mentioned above. We write code into a `.js` file and either reference it in a `HTML` document or execute it using the `node` command.
@@ -38,7 +38,7 @@ For our purpose and what is typically common regardless of what is mentioned abo
 
 ## Are source files the program? 📒
 
-In the context of javascript, this is true. This is because it is an interpreted language and therefore the `node` virtual machine or the javascript virtual machine in the browser is not expecting a **compiled** file that does not resemble the source. 
+In the context of JavaScript, this is true. This is because it is an interpreted language and therefore the `node` virtual machine or the JavaScript virtual machine in the browser is not expecting a **compiled** file that does not resemble the source. 
 
 In the context of **C#** and **Java**, these are languages that are compiled languages. The compiler assists with catching some issues that the programmer may have left in if they were not mindful at the time.
 
@@ -86,7 +86,6 @@ We will look at the following snippet.
 ```js
 import process from 'node:process'
 
-
 // Formatting output and printing it
 function outputFilePath(filepath) {
   let output = `The file that will be used is: ${filepath}`
@@ -106,7 +105,7 @@ outputFilePath(filepath);
 
 * Import statements, which are useful when using **nodejs** functionality and other libraries. Import statements are typically placed at the top of a file before any other code is read.
 
-* Function definitions are placed next, any code that is not immediately being executed by the interpreter should be declared after the import statements but before variable declarations that will be used immediately. other constructs fit this as well, such as **Classes**.
+* Function definitions are placed next, any code that is not immediately being executed by the interpreter should be declared after the import statements but before variable declarations that will be used immediately. Other constructs fit this as well, such as **Classes**.
 
 * Variable declarations and initialisation (top-level) along with other statements, these come after function definitions. Top-level variables and statements are different to those made inside functions and classes.
 

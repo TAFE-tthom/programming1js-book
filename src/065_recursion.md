@@ -1,7 +1,7 @@
 # Recursion
 
 Recursion is a technique within computer science that allows
-calling a function within itself. They are made of at least these two compononents.
+calling a function within itself. They are made of at least these two components.
 
 * Base-Case - Where the function terminates and does not call itself
 * Recursive-Case - Where the function will converge eventually to the base case
@@ -26,18 +26,18 @@ Problems can often been represented easier with recursion. However, we are able 
 
 * Immediately writing an iterative method where there is an established recursive method can be considered a premature optimisation.
 
-However there are drawbacks to recursion and you typically don't see it end up in production systems.
+However, there are drawbacks to recursion and you typically don't see it end up in production systems.
 
 * You don't have infinite recursion, each stack-frame (from a function call) has to be held in memory.
 
-* Inefficient with memory
+* Inefficient with memory, when calling a function, it will allocate space for that function, this additional memory may be completely unnecessary.
 
 
 ## Call Stack
 
-Javascript is a stack-based language so when a function or method is executed it is put onto a call-stack. The function or method being executed at the top of the stack is the most recently called method.
+JavaScript is a stack-based language so when a function or method is executed it is put onto a call-stack. The function or method being executed at the top of the stack is the most recently called method.
 
 A function or method finishes executing once it has reached a return state or for `void` or function/method without a return statement, simply reaches the end of scope.
 
-Everytime a function or method is called, data associated with that call needs to be allocated. This is known as a **stack frame**, it is a temporary allocation where the size of the frame is known at parsing time but the number of frames is not know until we are executing it.
+Every-time a function or method is called, data associated with that call needs to be allocated. This is known as a **stack frame**, it is a temporary allocation where the size of the frame is known at parsing time but the number of frames is not know until we are executing it.
 

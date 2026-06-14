@@ -109,7 +109,7 @@ let loc3 = findWord(allwords, 'Jigsaw'); // -1
 
 Comment and explain your implementation, consider using the `break` [keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break) to help exit a loop early.
 
-Explain why `-1` is reasonable return value if we can't find the the word within the array.
+Explain why `-1` is reasonable return value if we can't find the word within the array.
 
 
 ### 4. Character Occurrence

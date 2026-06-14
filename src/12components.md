@@ -1,6 +1,6 @@
 # Components and JSX
 
-We will be exploring how components and specifically how JSX will work. JSX is a mixture of XML and Javascript within the same file. It allows representing UI components in a XML format while providing the ability for your javascript to directly interact with it.
+We will be exploring how components and specifically how JSX will work. JSX is a mixture of XML and JavaScript within the same file. It allows representing UI components in an XML format while providing the ability for your JavaScript to directly interact with it.
 
 ## Components and Properties
 
@@ -84,9 +84,9 @@ const renderedMessages = messages.map((e) => <Message msg={e} />)
 
 A major area of programming is called **Meta Programming**, in effect, it is the idea of programs writing programs.
 
-Within react and jsx, we have this idea of encoding functions as components inside a HTML like syntax.
+Within react and jsx, we have this idea of encoding functions as components inside an HTML like syntax.
 
-* With this convenience, the `build system` has to leverage a `JSX` parser to interpret it to javascript.
+* With this convenience, the `build system` has to leverage a `JSX` parser to interpret it to JavaScript.
 
 As outlined previously, the JSX parser will go through the `.jsx` files first and convert the usage of the user defined components into function calls.
 

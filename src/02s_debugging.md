@@ -2,7 +2,7 @@
 
 To visualise how a program executes, using `node` and the `inspect` flag to create a **breakpoint** and step through it.
 
-Let use the following code snippet under the name `broken.js` to demonstrate this and with the scenario that we were expecting `30` to be printed but we got `1020` instead.
+Let's use the following code snippet under the name `broken.js` to demonstrate this and with the scenario that we were expecting `30` to be printed but we got `1020` instead.
 
 ```js
 let ten = "10";
@@ -54,7 +54,7 @@ step in broken.js:6
   8 
 ```
 
-Use the following bit `exec console.log(result)` and press **ENTER**. This will demonstrate that we can execute small pieces of javascript code while in the debugging mode to extract information from it.
+Use the following bit `exec console.log(result)` and press **ENTER**. This will demonstrate that we can execute small pieces of JavaScript code while in the debugging mode to extract information from it.
 
 ```
 debug> exec console.log(result)

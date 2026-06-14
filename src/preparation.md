@@ -22,7 +22,7 @@ This setup should give you a suitable and focused workspace.
 
 ## Constructing Solutions 📒 🖊️
  
-Writing code is mostly the act of putting an idea onto paper. These ideas are ones in which we need to process and visualise.
+Writing code requires not just simply throwing syntax into a document but also putting ideas onto paper. These ideas are ones in which we need process and create a visualisation.
 
 The **Notebook** is a powerful tool here, to illustrate this point, it can be used for:
 
@@ -67,7 +67,15 @@ As an outcome, aim to do the following
   * Treat each chapter as requiring 10 hours, some may take less time or more time.
   * With this knowledge, you at least know what you will have achieved and how much more time you need to put in to achieve the rest.
 
-Don't be afraid of shifting it and changing the schedule it does not need to be rigid or super strict but has to communicate what you are working on in a way that helps you understand when you get back to it.
+Don't be afraid of shifting it and changing the schedule.
+
+It does not need to be super strict but having regularity and to also communicate what you are working on in a way that helps you understand when you get back to it.
+
+As a hint, schedule and title your sessions using the following.
+
+* Topic Name and Number
+* Exercise Name and Number
+
 
 ## Always Remember!
 

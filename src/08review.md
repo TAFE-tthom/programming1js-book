@@ -5,11 +5,13 @@ While there are no exercises for this section, hopefully this chapter has provid
 
 * You should know and understand
   * Different test types and their purpose
-  * Using vitest and writing unit tests
+  * Using **vitest** and writing unit tests
   * Purpose of comparing data with actual and expected
-  * Writing documentation and using jsdoc
-  * Internals of the garbage collector, references and allocations
+  * Writing documentation and using **jsdoc**
+  * Internals of the garbage collector, references, and allocations
   * Just-In-Time compilation basics
 
 
-When building applications and being mindful of these things can prompt a developer to start investigating these problems as they arise. While it isn't important always view things in terms of performance as correctness is important overall. When there is a demand to ensure that the feel of an application meets certain criteria, examining and profiling your application is important.
+When building applications and being mindful of these things can prompt a developer to start investigating these problems as they arise. While it isn't important always view things in terms of performance as correctness is important overall.
+
+When there is a demand to ensure that the feel of an application meets certain criteria, examining, and profiling your application is important.

@@ -4,14 +4,14 @@
 
 While I have reserved this chapter for another series, it is best that some idea that more than lists exist.
 
-## What are trees?
+## What are Trees?
 
 In computer science, a tree is an abstract model of a hierarchical structure:
 
-– A tree consists of nodes with a parent-child relation
-– if n is parent of m, then m is a child of n
-– a node has at most ONE parent in a tree
-– a node can have zero, one or more children
+* A tree consists of nodes with a parent-child relation
+* If `n` is parent of `m`, then `m` is a child of `n`
+* A node has at most ONE parent in a tree
+* A node can have zero, one, or more children
 
 Linked lists and trees share the concept of a `Node`. However, the implementation of a `Node` for a tree is one where there is usually mroe than one link instead of single one.
 
@@ -24,7 +24,7 @@ Common terms with trees:
 * Root: Node without a parent
 * Ancestors of a node: itself, parent, grandparent
 * Descendant of a node: Itself, any child, any grandchild.
-* Subtree: Tree consisting of a node and a its descendants, typically
+* Subtree: Tree consisting of a node and its descendants, typically
     a tree that is inside a tree.
 
 
@@ -32,15 +32,15 @@ We can also extract properties of a tree such as the `Depth`, `Level` and `Heigh
 
 * Depth of a tree, number of ancestors not including itself
 * Level of a tree, The set of nodes with a given depth
-* Height of a tree, maximm depth of any node
+* Height of a tree, maximum depth of any node
 
 
 ## Traversals
 
 As a generalisation, there exist two kinds of traversals on with trees.
 
-* Preorder Traversal
-* Postorder Traversal
+* Pre-order Traversal
+* Post-order Traversal
 
 However, with special kinds of trees such as a `Binary Tree`, there exists the idea of an **In-Order Traversal**.
 
@@ -60,7 +60,7 @@ preOrder(node) {
 }
 ```
 
-*Hang on!? Why is PreOrder calling itself?*
+*Hang on!? Why is Pre-Order calling itself?*
 
 We have a recursive function, it can be an elegant way to demonstrate an algorithm however whenever you see a recursive function, the proper implementation will likely substitute a `Queue` or `Stack` instead.
 

@@ -28,7 +28,7 @@ Binary search is a different kind of search algorithm that reduces the search ti
 
 However, for the algorithm to eliminate half, it requires the data to be sorted.
 
-Lets take a look at the following pseudo-code.
+Let's take a look at the following pseudo-code.
 
 ```
 def binarySearch(items, object)
@@ -54,7 +54,7 @@ def binarySearch(items, object)
   
 ```
 
-The `lower` and `upper` variables are used to give a bound and also assist with computing the `mid`point of the remaining elements to check.
+The `lower` and `upper` variables are used to give a bound and assist with computing the `mid`point of the remaining elements to check.
 
 If the `items[mid]` is either less or greater than what we are searching, then we need to exclude the segments of that list. If it matches, we have found our object.
 
@@ -154,4 +154,4 @@ def merge(items, lower, half, upper)
     items[lower+i] = tempspace[i]
 ```
 
-The merge step is used to take two portions of a the array and re-order the elements. Given that the elements are sorted respective to their own portion, the portion themselves does not need to check elements that have already been check, however we need to get portions that are separate. 
+The merge step is used to take two portions of a the array and reorder the elements. Given that the elements are sorted respective to their own portion, the portion themselves does not need to check elements that have already been check, however we need to retrieve portions that are separate. 

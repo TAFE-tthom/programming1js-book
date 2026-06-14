@@ -11,6 +11,7 @@ You will need the following software when going through this book. This is to en
   * Vim - <https://www.vim.org/download.php>
   * CudaText - <https://cudatext.github.io/>
   * Lite-XL - <https://lite-xl.com/>
+
 * Access to a unix-shell (or if you really want to, powershell is somewhat viable).
 
 > **Why don't you recommend Visual Studio Code?**. Simply put, **Microsoft** has built in a lot of undesirable features into their text editor. It has become incredibly disruptive to productivity and for learners. What was once a reasonably good product is better captured by `VSCodium`.
@@ -26,7 +27,7 @@ It has been used to build a variety of applications from large and complex web a
 
 Git is a source-code management system for projects. It is used heavily in the software industry as part of collaboration but also it can be used quite easily for any project that involves text.
 
-Git is a distributed system as well, when you create a repository, you will create a local repository on your own device. Afterwards, you can then create repository on another device or service (like Github or Codeberg) and synchronise your code on your system with the one over there. You are also not locked in to using just 1 service, you can use any number.
+Git is a distributed system as well, when you create a repository, you will create a local repository on your own device. Afterwards, you can then create repository on another device or service (like **Codeberg**) and synchronise your code on your system with the one over there. You are also not locked in to using just 1 service, you can use any number.
 
 
 
@@ -36,7 +37,7 @@ A text editor is a program that allows you to write text to a document. Similar 
 
 There are a large number of text editor and this really comes down to preference and productivity.
 
-It is okay to switch to another text editor later, it won't majorly effecet your understanding of a programming language by you may need to get familiar with a new set of shortcuts and UIs.
+It is okay to switch to another text editor later, it won't majorly affect your understanding of a programming language by you may need to be familiar with a new set of shortcuts and UIs.
 
 ## How do these all connect? 📒
 
@@ -48,7 +49,7 @@ Each piece of software serves a particular role, however it can be difficult to 
   * It will show some basic syntax in your code (but not logic errors)
 
 * NodeJS
-  * It can execute javascript code
+  * It can execute Javascript code
   * Used to run desktop and server side application
   * Is used with a package manage called `npm` to use existing libraries
 

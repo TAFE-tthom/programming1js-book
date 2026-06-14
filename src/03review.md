@@ -18,7 +18,7 @@ Another fundamental pillar is wrapped up. You have moved on now and have gained 
   * Construct more complex programs that use multiple variables
   * Mutate variables in if statements and loops
 
-Control flow is one of those concepts in which your understanding and skills will always continue to develop. You wll be able to shorten the if boolean expressions and flow after today with more practice and insight gained.
+Control flow is one of those concepts in which your understanding and skills will always continue to develop. You will be able to shorten the if boolean expressions and flow after today with more practice and insight gained.
 
 
 

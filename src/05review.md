@@ -1,6 +1,6 @@
 # Review
 
-Classes are a power construct in a way where they encapsulate everything you have learnted prior under the same umbrella. They are an effective categorisation mechanism and clearly outline operations to the data that would work on them.
+Classes are a power construct in a way where they encapsulate everything you have learned prior under the same umbrella. They are an effective categorisation mechanism and clearly outline operations to the data that would work on them.
 
 * What you should know and understand
   * Classes and types, how they relate to each other

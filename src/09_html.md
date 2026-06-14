@@ -1,10 +1,10 @@
 # HTML Pages and Elements
 
-The presentaiton form of the web is using HTML and CSS. We will be exploring HTML in this lesson to understand how to structure it, utilise its attributes and event system.
+The presentation form of the web is using HTML and CSS. We will be exploring HTML in this lesson to understand how to structure it, utilise its attributes and event system.
 
 ## Elements and Tags
 
-HTML elements are markup text in which usually have an opening and closing tag. A tag is denoted with a `<` and `>` in which a closing tag is denoted with `</` and `>`. Occasionally some tags may include *self close*, although this is more of an oddity/legacy thing that is still debated to this day.
+HTML elements are mark-up text in which usually contain an **Opening** and **Closing** tag. A tag is denoted with a `<` and `>` in which a closing tag is denoted with `</` and `>`. Occasionally some tags may include *self close*, although this is more of an oddity/legacy thing that is still debated to this day.
 
 To demonstrate how tags functions, we will create a **paragraph** element using the following tags.
 
@@ -16,13 +16,15 @@ For example, the opening tag for `<p>` has the closing tag `</p>`.
 </p> 
 ```
 
-While HTML does not officially have *self-closing tags*, you will occasionally see `<img />` and `<br />` utilise them, however they are considered unnecessary as part the HTML specification as the element itself is usually acknowledged to not have content inbetween so `<img >` and `<br>` are completely acceptable.
+While many HTML elements do not officially have *self-closing tags*, you will occasionally see `<img />` and `<br />` utilise them.
+
+However, they are considered unnecessary as part the HTML specification as the element itself is usually acknowledged to not have content in-between so `<img >` and `<br>` are completely acceptable.
 
 ## Structuring
 
 Within HTML, there are different kinds of structures that you will need to acknowledge and memorise to be as efficient as possible.
 
-A HTML document will contain the following elements normally all the time. We will look into a simple scaffold on the next for HTML and explain it.
+A **HTML document** will contain the following elements normally all the time. We will look into a simple scaffold on the next for HTML and explain it.
 
 
 ```html
@@ -102,7 +104,7 @@ An important set of attributes are `data-*` attributes or known as **data-attrib
   
 ```
 
-Within javascript, these elements can be queried and their data extracted.
+Within JavaScript, these elements can be queried and their data extracted.
 
 
 ### Event Attributes
@@ -111,7 +113,7 @@ Elements in the DOM, have event attribute, not all DOM elements will be able to 
 
 Common event types can include `onclick`, `onkeypress`, `onchange` and `onfocus`.
 
-These attributes are usually being associated with a **Javascript Function** that they will trigger when interacted with.
+These attributes are usually being associated with a **JavaScript Function** that they will trigger when interacted with.
 
 ```html
 <button onclick="sendResponse()">
@@ -119,14 +121,14 @@ Send
 </button>
 ```
 
-The above snippet shows the `onclick` attribute being set to a string that looks like a function call. This string is eventually **evaluated** and interpreted as javascript and can be executed.
+The above snippet shows the `onclick` attribute being set to a string that looks like a function call. This string is eventually **evaluated** and interpreted as JavaScript and can be executed.
 
 
 ### ARIA Attributes
 
 Accessibility is very important in the web. To help with describing a particular object which may not necessarily be displayed as text, `aria-*` attributes assist with describing the them via `aria-label` but also by giving information about its current state and status.
 
-Consider the scenario where we have a halloween themed website. We use language like `Run Away` to describe exiting the website or moving to another screen.
+Consider the scenario where we have a Halloween themed website. We use language like `Run Away` to describe exiting the website or moving to another screen.
 
 ```html
 <button aria-label="Exit">
@@ -134,7 +136,7 @@ Consider the scenario where we have a halloween themed website. We use language 
 </button>  
 ```
 
-It may not be necessarily clear for someone what `Run Away` is doing, especially if they are vision impaired. However the `aria-label` serves the purpose of revealing the true intent is.
+It may not be necessarily clear for someone what `Run Away` is doing, especially if they are vision impaired. However, the `aria-label` serves the purpose of revealing the true intent is.
 
 For other attributes, consider the following as `aria-label` should be the be-all and end-all of accessibility.
 
@@ -142,4 +144,4 @@ For other attributes, consider the following as `aria-label` should be the be-al
 
 * `aria-describedby` - It refers to the an id of another element which contains the description
 
-* `aria-description` - Similar to describedby but has the description associated.
+* `aria-description` - Similar to `describedby` but has the description associated.

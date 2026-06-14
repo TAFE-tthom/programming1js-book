@@ -19,7 +19,7 @@ Write a class that will allow the user to add new shopping items and their quant
 
 ### 2. Traffic Lights
 
-You will need to create a trafficlight simulation but use inheritance to solve this problem. It is encouraged that you **do not** use **if** statements in your solution.
+You will need to create a traffic-light simulation but use inheritance to solve this problem. It is encouraged that you **do not** use **if** statements in your solution.
 
 You will have four classes to implement:
 * `TrafficLight` which will have the following properties:
@@ -62,7 +62,7 @@ This question has two parts to it.
 
 You are to create a class that will store a pair of 2D coordinates. These coordinates are stored as doubles and will denote a point on a 2D plane.
 
-Your Point2D objects must have the following public getter methods:
+Your `Point2D` objects must have the following public getter methods:
 
 * `constructor(x, y)`: that accepts 2 double values (x, y)
 * `getX()` : number
@@ -71,7 +71,7 @@ Your Point2D objects must have the following public getter methods:
 
 #### Part 2.
 
-Implement the static method  that will allow you to find a point between two given points. Implement this method to accept two Point2D objects and return a Point2D object. To calculate a point, you can use the following formula:
+Implement the static method that will allow you to find a point between two given points. Implement this method to accept two Point2D objects and return a Point2D object. To calculate a point, you can use the following formula:
 
 \\(x = a_x + ((b_x - a_x) * d)\\)
 

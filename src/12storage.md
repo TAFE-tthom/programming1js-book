@@ -4,7 +4,7 @@ While we have discussed and worked with server-side persistent storage, we will 
 
 ## Local Storage
 
-One of the most easy storage systems to use within javascript is `localStorage` or `sessionStorage`.
+One of the easier storage systems to use within JavaScript is `localStorage` or `sessionStorage`.
 
 This storage mechanism is fairly simple as you are able to treat it as a `Map` where the key and value are both strings. This does require serialising the data when saving it.
 
@@ -22,11 +22,11 @@ const serialised = JSON.stringify(obj);
 localStorage.setItem("user", serialised);
 ```
 
-The above snippet takes a javascript object and translates it into a string. This makes it suitable to be saved and we are able to set the value and later retrieve it using the same key.
+The above snippet takes a JavaScript object and translates it into a string. This makes it suitable to be saved and we are able to set the value and later retrieve it using the same key.
 
 ### Get Item
 
-Retrieving an item from local storage is a matter of knowing the key and also checking if the key maps to a value.
+Retrieving an item from local storage is a matter of knowing the key and checking if the key-maps to a value.
 
 You should be defensive and ensure to check if the value is not `undefined` or `null`.
 
@@ -41,7 +41,7 @@ if(serialisedObj) {
 } 
 ```
 
-Since the data is serialised, we will need to deserialise it and turn it back to a JSON object.
+Since the data is **serialised**, we will need to **deserialise** it and turn it back to a JSON object.
 
 ### Removing an Item
 
@@ -56,7 +56,7 @@ This is useful if need to reset tokens or if a user logs off your platform.
 
 ## IndexedDB
 
-IndexedDB is a more significant database system for the browser. It is akin to a NoSQL database system and also similar to `localStorage` where it contains keys and values.
+IndexedDB is a more significant database system for the browser. It is akin to a NoSQL database system and similar to `localStorage` where it contains keys and values.
 
 ### Constructing a database
 
@@ -74,7 +74,7 @@ The version change itself is useful to perform as it may be a reason to consider
 
 ### Events to handle
 
-You will need to handle the folowing events with indexedDB.
+You will need to handle these events with IndexedDB.
 
 ```js
 let databaseRef = null;
@@ -98,7 +98,7 @@ If the request is successful, we need to provide a way to update a reference to 
 
 ### Storing Data
 
-The database mechnaism is able to create **collections** which are known as **Object Stores** and **create an index** for them.
+The database mechanism is able to create **collections** which are known as **Object Stores** and **create an index** for them.
 
 ```js
 const userStore = databaseRef.createObjectStore(
@@ -126,7 +126,7 @@ Indexes are a way to create unique information that can be search efficiently. R
 
 ### Retrieving elements from a database
 
-Retrieving data from indexedDB is varied, as outlined, indexes play an important role. `.get` will allow someone to query a store and use it.
+Retrieving data from IndexedDB is varied, as outlined, indexes play an important role. `.get` will allow someone to query a store and use it.
 
 You are able to use the following.
 

@@ -6,7 +6,7 @@ However, it does demonstrate the similarities and the relationship between an Ar
 
 The common list-based data structures that are explored and used are.
 
-* Dynamic Array (`Array` type in javascript)
+* Dynamic Array (`Array` type in JavaScript)
 * Linked List
 * Queue
 * Stack
@@ -24,6 +24,8 @@ The container type is normally referred to as the `LinkedList` while the node is
 
 Let's mockup/diagram how a linked list works.
 
+**Step 1**
+
 ```
 1. Initialised Linked List, no data
 
@@ -33,6 +35,8 @@ LL.Root is null
 Null (no elements)
 ````
 
+
+**Step 2**
 
 ```
 2. We append the number 10
@@ -45,6 +49,9 @@ One element has been added, Root is currently set to contain:
     * a reference to the next link but is Null.
 
 ```
+
+**Step 3**
+
 ```
 3. We append the number 20
 
@@ -61,6 +68,9 @@ Two elements are contained within the linked list
     Note: Ideally, we wouldn't set Root.Next directly
         but use a variable called `cursor`
 ```
+
+**Step 4**
+
 ```
 4. We append the number 30
 
@@ -132,7 +142,7 @@ We now have a LIFO data structure a `stack`. An analogy would be to consider a s
 </div>
 
 
-When `push`ing onto the stack, the element wil be the new top element.
+When `push`ing onto the stack, the element will be the new top element.
 
 <div style="text-align: center;">
 

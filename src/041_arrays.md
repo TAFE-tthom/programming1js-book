@@ -10,7 +10,7 @@ Arrays addresses this issue where we have a collection of values that can be ass
 let amounts = [1.50, 2.75, 10.59, 8.99, 7.65];
 ```
 
-We can observe a number of values given to the array. However it may not be known when writing the code. You may observe array initialisation where the array is empty.
+We can observe a number of values given to the array. However, it may not be known when writing the code. You may observe array initialisation where the array is empty.
 
 ```js
 let amounts = [];
@@ -28,7 +28,7 @@ for(let i = 0; i < 10; i++) {
 
 The snippet above demonstrates adding 10 values (and the numbers 1 to 10) to the array assigned to `amounts`. To access values within the array, you are able to use an **index**.
 
-Lets look at how data is laidout and how indexing works with arrays.
+Lets look at how data is laid-out and how indexing works with arrays.
 
 ```js
 let amounts = [1.50, 2.75, 10.59, 8.99, 7.65];
@@ -75,7 +75,7 @@ The way the statement `amounts[0]` is evaluated, **assuming** the memory address
 0x1000 + (index * sizeof object)
 ```
 
-The `sizeof object` is implementation defined by the Javascript Virtual Machine, however a valid model is to assume `sizeof object` is 8. This assumption is based on size of the pointer (which would make the object a reference type) or smaller than it (which would be a primitive type).
+The `sizeof object` is implementation defined by the JavaScript Virtual Machine, however a valid model is to assume `sizeof object` is 8. This assumption is based on size of the pointer (which would make the object a reference type) or smaller than it (which would be a primitive type).
 
 We will observe what happens when index is 0, 1, 2 and 4.
 

@@ -23,7 +23,7 @@ We will go through the following topic areas within this chapter.
 
 * `vite` build system
 * `react` framework for the web
-* JSX, Components and metaprogramming
+* **JSX**, Components and meta-programming
 * React hooks and scenarios
 * Client-side Storage solutions
 * Render state and update triggers

@@ -14,9 +14,9 @@ When specifying `static` before the method name, it is specifying that the metho
 
 This is a reasonable question to have and one where the answer has many different reasons.
 
-1. Javascript OOP has evolved quite a bit from when it was originally created.
+1. JavaScript OOP has evolved quite a bit from when it was originally created.
 
-2. `class` construct was introduced in the late 00s and function prototyping was the OOP style prior.
+2. `class` construct was introduced in the mid-late 2000s and function prototyping was the OOP style prior.
 
 3. It is reasonable to associate methods with the type and not the object itself.
 
@@ -58,11 +58,11 @@ The snippet provides two kinds of constructions for an `AddressEntry`. Viewing t
 
 We have hinted at this topic prior and now lets look into the `this` keyword and how it can help with eliminating ambiguity but also used for passing an object reference within an instance context.
 
-The this keyword allows the programmer to refer to the object while within an instance method context. We cannot use the keyword within a static context.
+The `this` keyword allows the programmer to refer to the object while within an instance method context. We cannot use the keyword within a static context.
 
 #### Addressing ambiguity
 
-The `this` keyword within javascript (but other programming languages) has been used to address ambiguity of parameters and fields that have the same name. We will use the following as a case study.
+The `this` keyword within JavaScript (but other programming languages) has been used to address ambiguity of parameters and fields that have the same name. We will use the following as a case study.
 
 ```js
 class Postcard {
@@ -131,21 +131,21 @@ Bingo! We can use how we have used the `this` keyword has an argument and that t
 
 ## Inheritance
 
-Inheritance is a significant concept of OOP. Allowing reusability and
-changes to inherited methods between different types in a hierarchy.
+Inheritance is a common and significant concept of OOP (Object Oriented Programming). It enables reusability and changes for inherited methods between different types in a hierarchy.
 
-What does inheritance provide us.
+While this is not unique to OOP, it is push forward as a language feature rather than something the programmer will need to define themselves. As a language feature, it enables the following:
+
 
 * Attribute and method reusability
-* Defining sub-type methods
+* Defining **subtype** methods
 * Overriding Inherited Methods
 * Type Information.
 
 As established, we are able to create a type using `class` and with that we can compare against it.
 
-### Extending A Class
+### Extending a Class
 
-As part of creating a sub-type of an existing class we will be using the `extends` keyword. This keyword allows us to specify when a class is inheriting from another.
+As part of creating a **subtype** of an existing class we will be using the `extends` keyword. This keyword allows us to specify when a class is inheriting from another.
 
 ```
 class ClassName extends ClassItInheritsFrom
@@ -163,7 +163,7 @@ class Dog extends Canine
 
 Once defined, Dog type can also be used as a Canine type as it is just an extension of such type.
 
-#### Inherited constructors
+#### Inherited Constructors
 
 When a type inherits from another, it will be able to use the existing fields and methods, however it will need to ensure that it can use the existing constructor. Let's look into the scenario where we have two types `User` and `Admin`.
 
@@ -192,7 +192,7 @@ The above snippet demonstrates the `Admin` class inheriting from `User` but usin
 
 #### Inherited Methods
 
-Already established, we have access to the super type's methods. However, lets consider what can occur when we redefine or don't.
+Already established, we have access to the super type's methods. However, let's consider what can occur when we redefine or don't.
 
 ```js
 class User {
@@ -250,7 +250,7 @@ class Admin extends Moderator {
 }
 ```
 
-The classes above demonstrate variation in the inherited methods and the **overriding** of the original logic as well re-use of it.
+The classes above demonstrate variation in the inherited methods and the **overriding** of the original logic as well reuse of it.
 
 * The user can only delete their own posts and cannot deactivate other users, only themselves.
 
@@ -260,21 +260,35 @@ The classes above demonstrate variation in the inherited methods and the **overr
 
 This kind of specialisation of logic while still adhering to the same method signature means any place that uses methods from the `User` type, can also have `Moderator` and `Admin` be used in same place without modification.
 
-## Inheritance vs Composition
+## Inheritance and Composition
 
 While we have introduced inheritance which forms the basis for reusing attributes and methods. It should be noted that it shouldn't be used readily. There is a tendency to run into issues like **weak base class**.
 
 It should be noted that the relationship between two classes can be in the following forms.
 
-* Is-a relationship (Extension, suitable for inheritance)
+* **Is-a relationship** (Extension, suitable for inheritance)
 
-* Has-a relationship (Contains or is made up of that type, not suitable for inheritance)
+* **Has-a relationship** (Contains or is made up of that type, not suitable for inheritance)
 
 We have to be very certain with inheritance that any class that inherits from another is a type of that class. There should be clear reasoning that the types satisfy the relationship.
 
 Some instances where it makes sense:
 
-* Super class is Cat and subclasses are Panther, Lion, Tiger
-* Super class is Controller and subclasses are Gamepad, Joystick, Powerglove
-* Super class is Media and subclasses are DVD, Book, Image
+* Super class is **Cat** and subclasses are **Panther**, **Lion**, **Tiger**
+* Super class is **Controller** and subclasses are **Gamepad**, **Joystick**, **Powerglove**
+* Super class is **Media** and subclasses are **DVD**, **Book**, **Image**
 
+
+Where it is a little weaker and makes sense for composition to be relevant is where the class has **fields** or **properties** which have their own behaviours. This is typically more applicable when designing an application.
+
+For some examples, we will use types above such as **Cat** and **Controller** along with their sub-types but specify characteristics which they contain.
+
+* **Cat** a common set of field would be: **width**, **length**, and **height** which aren't unique to **Cat** or its subtypes as they can be used to describe a **Dog**, **Horse**, **Parcel**.
+
+We could describe those fields as their own type with the name **Dimensions**. This would mean that **Cat**, **Dog**, **Parcel** have **Dimensions**.
+
+* **Controller**, a common characteristic is that we have **Button**s for controllers. However, **Joystick** may have other fields such as **pitch** and **yaw**.
+
+What is interesting about **Button** is that it could be its own component that is used in other types. It is also applicable to generalise button to hold state information on if it is pressed or not and the logic associated with it.
+
+As a **guideline**, consider **composition** over **inheritance**, this allows you to reuse classes and objects that have been defined.

@@ -67,7 +67,7 @@ switch (dayofweek) {
 }
 ```
 
-There is the ability to enable fallthrough (not using `break`), which means the code that is used for more than one case will be grouped. However **fallthrough** with switch statements is usually considered a bad practice and can result in unintentional issues.
+There is the ability to enable fall-through (not using `break`), which means the code that is used for more than one case will be grouped. However, **fallthrough** with switch statements is usually considered a bad practice and can result in unintentional issues.
 
 ## Nesting Loops
 
@@ -100,8 +100,8 @@ We can observe that for every `i`, we do 3 iterations of the inner loop (`j`). T
 
 ## How many layers can we go?
 
-We are not really limited with how much we can nest control-flow blocks within each other. However it can be difficult to comprehend and likely could be simplified.
+We are not really limited with how much we can nest control-flow blocks within each other. However, it can be difficult to comprehend and likely could be simplified.
 
-It is advised to consider if you **need** that additional loop or if you are overcomplicating it. It is usually advisable to go through a scenario on paper when solving the problem and write down the steps you took 🖊️.
+It is advised to consider if you **need** that additional loop or if you are over-complicating it. It is usually advisable to go through a scenario on paper when solving the problem and write down the steps you took 🖊️.
 
 

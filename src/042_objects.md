@@ -1,6 +1,6 @@
 # Objects
 
-Objects are a very broad concept in both javascript and other programming languages. It is common to refer values assigned to variables as objects as it is a generalisation. Specifically, objects usually refer to another aggregate type which is specifically composed of fields, properties and methods.
+Objects are a very broad concept in both JavaScript and other programming languages. It is common to refer values assigned to variables as objects as it is a generalisation. Specifically, objects usually refer to another aggregate type which is specifically composed of fields, properties, and methods.
 
 ## Initialising Objects
 
@@ -12,12 +12,12 @@ To construct an empty object, you can do the following.
 let obj = { };
 ```
 
-While, not encourage or common, you can update `obj` with new fields. However this is 
+While, not encourage or common, you can update `obj` with new fields. However, this is 
 typically discouraged as it does not make it obvious what fields an object has outside of its initialisation.
 
 ## Fields
 
-Fields are associated with the object and usually referred using `.`. To initialise a object you can specify the field names.
+Fields are associated with the object and usually referred using `.`. To initialise an object you can specify the field names.
 
 ```js
 let person = {
@@ -43,7 +43,7 @@ It is equivalent and more accurately represented as part of the `JSON` specifica
 
 ## Reference Types, Indirection and Aliasing
 
-It has been discussed that both **Arrays** and **Objects** are reference types. As outlined in **Index Calcuation**, Arrays are assigned to a memory address, Objects are also assigned to a similar value or modelled as such.
+It has been discussed that both **Arrays** and **Objects** are reference types. As outlined in **Index Calculation**, Arrays are assigned to a memory address, Objects are also assigned to a similar value or modelled as such.
 
 > **Author's note**: It is reasonable to assume that how objects and classes are modelled are offset calculations from a base address. However, in reality, objects are implemented similarly to HashMaps.
 
@@ -67,9 +67,9 @@ We are able to refer to the field inside `x` via `a.msg.msg`. This is because wh
 
 ### Nesting and more indirection
 
-This now leads into a more complex topic, **Indirection with nesting**, we are now going to be using objects as a way to nest and group data but we can also group it up quiite a bit where it has layers!
+This now leads into a more complex topic, **Indirection with nesting**. We are now going to be using objects as a way to nest and group data but we can also group it up quite a bit where it has layers!
 
-Let's examine this onion!
+Let's examine this **onion**!
 
 ```js
 let onion = {
@@ -87,9 +87,9 @@ let onion = {
 } 
 ```
 
-The above snipper demonstrates how we can nest objects inside other objects, we do not necessarily need to have separate variables for each layer or an array but we can actively place another object inside one.
+The above snippet demonstrates how we can nest objects inside other objects, we do not necessarily need to separate variables for each layer or an array but we can actively place another object inside one.
 
-So, a question here is how dow e get the layers from the `onion` variable?
+So, a question here is how do we get the layers from the `onion` variable?
 
 Remember, `onion` has the fields `layer` and `next`. The `layer` field is simply allowing us to know what layer we are at. To get layer 2, we will need to do:
 
@@ -97,9 +97,9 @@ Remember, `onion` has the fields `layer` and `next`. The `layer` field is simply
 onion.next
 ```
 
-The above is getting layer 2 in which we can retrive the value using `.layer`.
+The above is getting layer 2 in which we can retrieve the value using `.layer`.
 
-To get layer 3, we simply just use `.next` again as we can see they follow the same pattern. This is an effective use of nesting.
+To get layer 3, we simply just use `.next` again as we can see it follow the same pattern. This is an effective use of nesting.
 
 
 ### Aliasing
@@ -119,7 +119,7 @@ console.log(a[2]);
 console.log(b[2]); //What's the print out here?
 ```
 
-Specificaly we are leaning into some particular ideas when using **reference** types where if we were to do a similar operation but on a `number` or `boolean`, this will not be observable.
+Specifically we are leaning into some particular ideas when using **reference** types where if we were to do a similar operation but on a `number` or `boolean`, this will not be observable.
 
 In short, there is a difference between **Reference** types and **Value** types, anything that is a reference like a `object` or `array` will copy the address while value types like `number` or `boolean` will copy the value.
 
@@ -128,7 +128,7 @@ The outcome from the snippet above is one where we observe the output for both w
 
 ## Destructing Operations
 
-The term is a little spicy as destructors or destructuring can be conflated with a different meaning outside of this context. Within Javascript, it may be more appropriate to extract data from the fields of an object or parts of an array.
+The term is a little spicy as destructors or destructuring can be conflated with a different meaning outside of this context. Within JavaScript, it may be more appropriate to extract data from the fields of an object or parts of an array.
 
 To extract that, we can simply create a variable an assign it. **However**, we have a more **ergonomic** way of doing this by using a destructuring statement.
 
@@ -169,7 +169,7 @@ let person = {
 let copy = { ...person };
 ```
 
-The snippet above takes the fields and values associated from `person` and constructs a new object. However this will correspond to a new allocation (just for the object itself, not for anything referenced inside).
+The snippet above takes the fields and values associated from `person` and constructs a new object. However, this will correspond to a new allocation (just for the object itself, not for anything referenced inside).
 
 Afterwards, we are able to change particular fields if we may want them differ just by accessing the field as usual.
 

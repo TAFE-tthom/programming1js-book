@@ -1,7 +1,7 @@
 # Web History and Background
 
 
-Web-development has evolved a fair amount from the early 90s, where HTML 1.0. We have gone from only developing static web pages, styling and early javascript engines and more dynamic content.
+Web-development has evolved a fair amount from the early 90s, where HTML 1.0. We have gone from only developing static web pages, styling, and early JavaScript engines and more dynamic content.
 
 ## The Incorrect History Of The Web
 
@@ -23,7 +23,7 @@ During 2000s and early 2010s, websites and applications started adopting and tec
 * Mobile Web                   - 00s
 * Web API - JSON standard      - 00s
 
-Within the 2010s, single-page applications, APIs, Web-Assembly, Translations from JS to Platform Target and newer protocols like websockets and webrtc become standardised.
+Within the 2010s, single-page applications, APIs, Web-Assembly, Translations from JS to Platform Target and newer protocols like WebSockets, and WebRTC, become standardised.
 
 * Single Page Applications     - 10s
 * Server-Side JS               - 10s
@@ -32,5 +32,7 @@ Within the 2010s, single-page applications, APIs, Web-Assembly, Translations fro
 
 Even to this day some of the technologies such as WASM are still being settled into the regular development flow. Regardless, all these different tools and technologies still exist in some form today and will likely continue to work for another decade.
 
-Or maybe a week later, who knows.
+Or maybe only a week later*.
+
+*This is a joke referencing how there was a new Web Framework every week during the 2010s.
 

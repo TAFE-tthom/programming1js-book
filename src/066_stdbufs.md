@@ -4,11 +4,11 @@ We get to discuss some topics from **chapter 2** within this section.
 
 With other programming language like C#, you have used `Console.ReadLine` and `Console.WriteLine` or some variation to interact with input and output from a program.
 
-In JS we need construct functions that can be used by JS event-loop system and retrieve data from buffers attached to the process.
+In JS we construct functions that can be used by JS event-loop system and retrieve data from buffers attached to the process.
 
 ## Standard IO
 
-We have seen and heard the term Input and Output and to apply **Standard** before them is to imply that there is one way that all processes interact with the IO system.
+We have seen and heard the term Input and Output and to apply **Standard** before them is to imply that there is one way that all processes interact with the **IO** system.
 
 Whenever we launch a program and it turns into a process, each process has access to 3 buffers.
 
@@ -16,7 +16,7 @@ Whenever we launch a program and it turns into a process, each process has acces
 * Output
 * Error
 
-Whenever you call `ReadLine` in C#, it is your process going to sleep until the IO system wakes it up to process the data present there. 
+Whenever you call `ReadLine` in C#, it is your process going to sleep until the **IO** system wakes it up to process the data present there. 
 
 
 ### Reading Lines
@@ -40,14 +40,14 @@ RunProgram();
 
 ## Files
 
-Files are a familiar IO construct and one we use to create these very slides and also write code in. Programs will interact with files by using them to save data or read them.
+Files are a familiar **IO** construct and one we use to create these very slides and write code in. Programs will interact with files by using them to save data or read them.
 
 A file is a logical map to a range (or many ranges) of memory. We can have files mapped to the hard disk, mapped to ram or mapped over a network.
 
 
-*How do we read a file with javascript?*
+*How do we read a file with JavaScript?*
 
-We can adapt the code where we read from stdin to also be applicable for files. As a generalisation, buffers and files share the same interface with nodejs.
+We can adapt the code where we read from **stdin** to also be applicable for files. As a generalisation, buffers and files share the same interface with NodeJS.
 
 ```ts
 import readline from 'node:readline';
@@ -117,6 +117,6 @@ RunProgram();
 
 We also have other files, more special in this case.
 
-Within Unix and Unix-Derivative operating systems exist pipes. These are memory mapped files and act similarly as standard input and output for a program but that we can read and write to them from anywhere.
+Within **Unix** and **Unix-Derivative** operating systems exist pipes. These are memory mapped files and act similarly as standard input and output for a program but that we can read and write to them from anywhere.
 
 Unix Sockets operate similarly but provide the ability to have two-way communication. 

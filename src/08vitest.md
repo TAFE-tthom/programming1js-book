@@ -1,6 +1,6 @@
 # vitest - Testing Framework for javascript
 
-While javascript has a large number of testing frameworks. `vitest` is a fairly universal and easy to use framework. It takes a lot of the ideas from `jest` and modernises them while also making it easier to be compatible with typescript.
+While JavaScript has a large number of testing frameworks. `vitest` is a fairly universal and easy to use framework. It takes a lot of the ideas from `jest` and modernises them while also making it easier to be compatible with TypeScript.
 
 While it typically is included within `vite` itself, it can be used standalone. Once installed using `npm`, you can modify `package.json` and update the `test` field within `scripts` to invoke `vitest`.
 
@@ -17,9 +17,9 @@ We'll get the output from an example project.
 instructions.js instructions.test.js main.js node_modules package.json
 ```
 
-It is also appropriate for source code for test files to be stored in a `test` folder. However, some amount of configuration will need to be done **if the importing of the files is done without using relative pathing**.
+It is also appropriate for source code for test files to be stored in a `test` folder. However, some amount of configuration will need to be done **if the importing of the files is done without using relative paths**.
 
-## Writing test cases
+## Writing Test Cases
 
 To start writing test cases for your application, you will need to ensure you have the following things done.
 
@@ -50,10 +50,10 @@ test('Tutorial - Specify duration and capacity', function() {
   
 ```
 
-Writing these test cases isn't too tricky but the pattern it utilises may seem unintuitive. Within the snippet above, the `test` function serve the fucntion of
+Writing these test cases isn't too tricky but the pattern it utilises may seem unintuitive. Within the snippet above, the `test` function serve the function of
   providing a test case description and how the test will be conducted.
 
-The anonymous function given, initialises a tutorial and sets particular fields to ensure that the correct values are being set and retrieved correctly. This is done using `expect` which will accept the **actual** value being reported and check it agaisnt the `toBe(<expected value>)` segment.
+The anonymous function given, initialises a tutorial and sets particular fields to ensure that the correct values are being set and retrieved correctly. This is done using `expect` which will accept the **actual** value being reported and check it against the `toBe(<expected value>)` segment.
 
 > For anyone who is curious, the pattern utilised is a form of **builder** pattern.
 
@@ -62,6 +62,6 @@ The anonymous function given, initialises a tutorial and sets particular fields 
 
 Once you have constructed your test cases, you can generate how much code your test cases are covering. This provides insight into the effectiveness of your test cases.
 
-You will need to add an additional script to your packagejson that will allow you to trigger `vitest` with coverage. Under `scripts`, you can add `coverage` to run the command `vitest run --coverage`.
+You will need to add an additional script to your `package.json` that will allow you to trigger `vitest` with coverage. Under `scripts`, you can add `coverage` to run the command `vitest run --coverage`.
 
 You can then run the coverage with `npm run coverage`. It will output the coverage results to the terminal. You will observe the columns, `% stmts`, `% branch`, `% functions`, `% Lines`, these outline the percentage of code that are executed during a test case.

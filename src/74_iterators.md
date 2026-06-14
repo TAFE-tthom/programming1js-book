@@ -16,7 +16,9 @@ This can include:
 
 ## What is the advantage here?
 
-We get to maintain state during the iteration, linking back to our time-complexity of our `get(...)` call on a linkedlist, this can be **O(n)**. This will result in the following code being O(n^2).
+We get to maintain state during the iteration, linking back to our time-complexity of our `get(...)` call on a linkedlist, this can be **O(n)**. This will result in the following code being **O(n^2)**.
+
+*What is the O(...) stuff?* - It is referencing the time or space complexity of an operation, in this context for `get()`, since we have to start at the beginning of our linked list and search for the element, this function's complexity (time) grows with its input (`n`).
 
 ```js
 let list = new LinkedList();
@@ -31,7 +33,7 @@ for(let i = 0; i < list.size(); i++) {
 
 Maintaining the state of the cursor means we aren't always restarting from the beginning and to find the **next** element.
 
-The current iterators that have been outlined isn't the same as what Javascript expects but it at least breaks down the different components of it.
+The current iterators that have been outlined isn't the same as what JavaScript expects but it at least breaks down the different components of it.
 
 If we want our iterators, we need to leverage `Symbol.iterator` and implement a method that corresponds with this builtin.
 

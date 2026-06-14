@@ -1,6 +1,6 @@
 # Callbacks and Async
 
-An important piece in javascript and most programming languages is the idea of a `callback` or `function pointer`. The idea with callbacks is that, like other bits of data that we can pass as arguments as part of function calls, we can also pass a function as an argument as part of a function call.
+An important piece in JavaScript and most programming languages is the idea of a `callback` or `function pointer`. The idea with callbacks is that, like other bits of data that we can pass as arguments as part of function calls, we can also pass a function as an argument as part of a function call.
 
 *Why would you do this?*
 
@@ -10,7 +10,7 @@ A great example is **sorting**, this is because sorting algorithms are typically
 
 ## Examples of a callback
 
-Let's look at a realworld example where we would 
+Let's look at a real-world example where we would 
 
 ```js
 function numberCompare(x, y) {
@@ -24,7 +24,7 @@ nums.sort(numberCompare); // nums is now [1, 2, 5, 7, 8 ]
 
 The above snippet outlines how we provided a callback outline the difference between two numbers. The `numberCompare` function is passed as an argument to be used to compare two numbers when sorting.
 
-You'll also find that javascript exposes a functional api on some of its collections which allow you to use `.map`, `.filter`, `.forEach` and `.reduce`. These functions accept a callback to assist with the operation as we can see with `.map` below.
+You'll also find that JavaScript exposes a functional API on some of its collections which allow you to use `.map`, `.filter`, `.forEach` and `.reduce`. These functions accept a callback to assist with the operation as we can see with `.map` below.
 
 ```js
 
@@ -56,11 +56,13 @@ If a `promise` is rejected, it will be able to throw an error that can be caught
 
 ## Async and Await
 
-`async` and `await` are keywords within javascript that are required to return a promise. In more modern javascript, `async` and `await` are typically used over callbacks or promise chaining however you will still see these techniques used.
+`async` and `await` are keywords within JavaScript that are required to return a promise. In more modern JavaScript, `async` and `await` are typically used over callbacks or promise chaining however you will still see these techniques used.
 
 ### Async and Await Functions
 
-To create an `async` function it is a matter of specifying `async` infront of the function declaration. When specifi
+To create an `async` function it is a matter of specifying `async` in-front of the function declaration. When specified, this treats the execution of the function a little differently.
+
+Within an `async` function, you are able to use `await` to wait on data when available. This yields the execution of that function and will enable the JavaScript runtime to execute something else.
 
 ```js
 async function readFile(path) {
@@ -80,9 +82,9 @@ dataPromise
 ```
 
 
-### How async functions work
+### How Async Functions Work
 
-These functions can be quite confusing as they can break our current understanding of execution. This is because the sequence of events are bnot how they may appear in code. What is revealed is how the javascript virtual machine **schedules execution**.
+These functions can be quite confusing as they can break our current understanding of execution. This is because the sequence of events are not how they may appear in code. What is revealed is how the JavaScript virtual machine **schedules execution**.
 
 Let's reveal how it schedules works.
 
@@ -101,12 +103,12 @@ calledFirst(); //1
 console.log("This is second"); // 4
 ```
 
-The code snippet has annotations associated to what statements will be executed in order. So, lets break it down.
+The code snippet has annotations associated to what statements will be executed in order. So, let's break it down.
 
 * Async function `calledFirst` is called
 * The function has been entered and will execute `Started`
 * It sees `await` and will yield the rest of the function to scheduler
-* It continues executing after the `calledFirst` callsite, and hits `This is second`, this is because the rest of the code is already ready to execute, we haven't `resolved` the other part
+* It continues executing after the `calledFirst` call-site, and hits `This is second`, this is because the rest of the code is already ready to execute, we haven't `resolved` the other part
 * No other code is left, the remaining operation in the queue is in the `await` statement and finishes executing `calledFirst`
 
 ## `fetch` and retrieve external data
@@ -114,7 +116,7 @@ The code snippet has annotations associated to what statements will be executed 
 This segment is now focused on an element that is common in web and app development. We will be looking into the `fetch` function and the idea of a `Promise`.
 
 With `node` and the browser, you can call `fetch`, it requires the following:
-* `url`, A url or endpoint is http location in which we want to retrieve data from, this could be a webpage
+* `url`, A URL or endpoint is HTTP location in which we want to retrieve data from, this could be a web-page
 
 * (optionally) `options`, This field is expected to be an object which will commonly have: `method`, `body` and `headers` set. There are other fields that can be set but it is dependent on the behvaiour you are asking.
 
@@ -131,7 +133,7 @@ fetch("https://example.org/post", {
 });
 ```
 
-The snippet above outlines the url as `https://example.org/post`, the method as `POST` and `headers` with an entry outlining the content will be `JSON` and a `body` where an object has been serialised.
+The snippet above outlines the URL as `https://example.org/post`, the method as `POST` and `headers` with an entry outlining the content will be `JSON` and a `body` where an object has been serialised.
 
 These kinds of requests are common and you can observe the usage of these calls when opening the network tab under the developer UI.
 

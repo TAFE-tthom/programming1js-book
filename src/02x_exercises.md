@@ -6,7 +6,7 @@ Work on the following tasks as a way to ensure you have understood this chapter'
 
 ### 1. Hello Command Line
 
-Create a `hello_cmd.js` file which you will use to accept a **single** command line argument. The intent of the program is to *prefix* `Hello `  to the command line argument.
+Create a `hello_cmd.js` file which you will use to accept a **single** command line argument. The intent of the program is to *prefix* `Hello ` to the command line argument.
 
 Example:
 
@@ -23,7 +23,7 @@ Create a `distance_travelled.js` file which you will use to accept **two** comma
 
 \\(distance = speed * duration\\)
 
-Afterwards we can print out the speed, duration and total distance travelled.
+Afterwards we can print out the speed, duration, and total distance travelled.
 
 You can assume that speed is in km/h and duration is in hours.
 

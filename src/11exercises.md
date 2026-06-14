@@ -10,7 +10,7 @@ You have been tasked with writing a todo-list database. The focus of this task i
 
 * `constructor()` - No parameters, it simply initialises the object.
 
-* `addTodo(key, title, description)` - Three parameters, `key` is a unique identifier for the todo-object, it is used to ,  `title` outlines the heading that it would be under and the `description` are the details associated with the object.
+* `addTodo(key, title, description)` - Three parameters, `key` is a unique identifier for the todo-object, it is used to , `title` outlines the heading that it would be under and the `description` are the details associated with the object.
 
 * `getTodo(key)` - One parameter, `key` as with `addTodo`, `getTodo` is used to retrieve a `todo-object`. The object will be in the form:
 

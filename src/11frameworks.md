@@ -8,19 +8,19 @@ Welcome to your first segment of writing some server application logic. After in
 
 With a simple `Express` application, the following concepts are critical in understanding the lesson/domain.
 
-* HTTP method - A method is part of the `HTTP` protocol, it is used to outline the kind of request you are performing. Common HTTP Methods are: GET, POST, PUT, DELETE.
+* **HTTP** method - A method is part of the `HTTP` protocol, it is used to outline the kind of request you are performing. Common HTTP Methods are: GET, POST, PUT, DELETE.
 
-* Port - A port, is a virtual port or application port, when a server is running (your express application), it needs to listen on a port for incoming connections. This allows the operating system to direct network traffic to the application.
+* **Port** - A port, is a virtual port or application port, when a server is running (your express application), it listens on a port for incoming connections. This allows the operating system to direct network traffic to the application.
 
-* endpoint - An endpoint is typically a `HTTP` URL, similar to what you put into the browser.
+* **Endpoint** - An endpoint is typically a `HTTP` URL, similar to what you put into the browser.
 
 * `app` - This is a common variable inside express applications that will usually have a `dictionary` that holds onto different response callbacks.
 
-* `request` - A request is a connection and data associated with it to a webserver. A request is made by the web-browser or application
+* `request` - A request is a connection and data associated with it to a web-server. A request is made by the web-browser or application
 
-* `response` - A response is data sent to ther requester. This is the response from the webserverto to the web-browser or application.
+* `response` - A response is data sent to the requester. This is the response from the web-server to the web-browser or application.
 
-### Express - Making your server
+### Express - Making Your Server
 
 To get started with `express`, you need to create an `npm` package using `npm init` inside a folder which is appropriately named.
 
@@ -53,15 +53,14 @@ app.listen(port, function() { // Anonymous function called when app starts liste
 
 ### Express - Routes/Endpoints
 
-A route or endpoint is the suffix added to a domain. Typically webservers are given a domain name which is associated to their IP address. The association between the domain name and the IP address gets resolved by a DNS (Domain Name Server).
+A route or endpoint is the suffix added to a domain. Typically web-servers are given a domain name which is associated to their IP address. The association between the domain name and the IP address gets resolved by a DNS (Domain Name Server).
 
 Anytime you type in `tafensw.edu.au` or `google.com` into the browser URL bar, if the address is not known, the DNS will resolved what IP address you will receive. A common domain that you always have access on your own machine is `localhost` which refers your own computer and maps to the IP address `127.0.0.1`.
 
 With `endpoints`, what comes after the domain typically is a resource that a browser wants to access (hence Uniform Resource Locator is what URL stands for).
 
-\newpage
 
-So, lets consider what an endpoint looks like with `localhost` of an app listening on port 3000:
+So, let's consider what an endpoint looks like with `localhost` of an app listening on port 3000:
 
 * `localhost:3000/hello` - `/hello` is the endpoint which will be a resource.
 
@@ -82,7 +81,7 @@ app.get('/helloworld', function(req, res) {
 
 ### Express - Route Parameters (ALL)
 
-Now that we can create endpoints, this can be extended to support parameters. Specifically, as part of designing our WebAPI, our endpoints can use parts of the endpoint as an argument for our response callback.
+Now that we can create endpoints, this can be extended to support parameters. Specifically, as part of designing our **WebAPI**, our endpoints can use parts of the endpoint as an argument for our response callback.
 
 To demonstrate this, we can create a simple greeting endpoint that allows for inputting a name as an argument.
 
@@ -105,15 +104,15 @@ For example, your terminal you can do the following:
 Hello Jake
 ```
 
-`curl` is a simple tool that allows for querying webservers. We can also use this command for sending more complex data that the browser would normally do.
+`curl` is a simple tool that allows for querying web-servers. We can also use this command for sending more complex data that the browser would normally do.
 
 \newpage 
 
 ### Express - Form Body (POST, PUT, DELETE)
 
-A regular scenario when interacting with a webserver is being able to package data that would normally be part of a form on a webpage. We will be using the `POST` http method in this case.
+A regular scenario when interacting with a web-server is being able to package data that would normally be part of a form on a web-page. We will be using the `POST` HTTP method in this case.
 
-Lets take the scenario that we are creating an endpoint which will allow us to accept a JSON object (Javascript Object Notation object) and interact with it.
+Let's take the scenario that we are creating an endpoint which will allow us to accept a JSON object (JavaScript Object Notation object) and interact with it.
 
 ```js
 // We want to handle JSON data

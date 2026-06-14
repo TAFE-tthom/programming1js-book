@@ -2,7 +2,7 @@
 
 The function signature forms part of the type information for the variable which allows a linter to confirm that an appropriate function with the same signature has been assigned.
 
-Within Javascript, while this signature is not strictly enforced, it can be enforced by a linter which checks it against the documentation or by employing typescript that will identify the type signature.
+Within JavaScript, while this signature is not strictly enforced, it can be enforced by a linter which checks it against the documentation or by employing TypeScript that will identify the type signature.
 
 The utility here is similar to inheritance and polymorphism, we are able to set up a function that will expect a particular function to be given to it as an argument.
 
@@ -39,10 +39,10 @@ function selectionSort(numbers, callback) {
 }
 ```
 
-Within the snippet above we can observe the `callback` being used `getMinIndex` and `selectionSort`. This is used as a `comparator`, as in, since the sorting algorith can be used on **any** type, we must know how to best compare it.
+Within the snippet above we can observe the `callback` being used `getMinIndex` and `selectionSort`. This is used as a `comparator`, as in, since the sorting algorithm can be used on **any** type, we must know how to best compare it.
 
 
-The following usage of `selectionSort` will outline how we can compare and use different data sets with the same function.
+The following usage of `selectionSort` will outline how we can compare and use different data-sets with the same function.
 
 ```js
 function strCompare(a, b) {

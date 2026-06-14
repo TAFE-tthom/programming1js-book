@@ -21,6 +21,7 @@
   - [NPM](./015_npm.md)
   - [Version Control](./014_git.md)
   - [Review](./01t_review.md)
+  - [Glossary](./01t_terms.md)
 
 - [Source Code, Output, Variables](./03jsbasics.md)
   - [Source Files](./021source.md)
@@ -40,7 +41,7 @@
   - [Exercises](./03x_exercises.md)
   - [Review](./03review.md)
 
-- [Objects, Arrays and Functions](./04_arrays_and_funcs.md)
+- [Objects, Arrays, and Functions](./04_arrays_and_funcs.md)
   - [Arrays](./041_arrays.md)
   - [Objects](./042_objects.md)
   - [Functions](./043_functions.md)
@@ -51,7 +52,7 @@
   - [Prototypes and Class Structure](./050_class_structure.md)
   - [Methods and Inheritance](./051_inheritance.md)
   - [Polymorphism and Mixins](./052_polymorphism.md)
-  - [Modularising, Import and Export](./054_import.md)
+  - [Modularising, Import, and Export](./054_import.md)
   - [Errors and Exceptions](./55_errors_exceptions.md)
   - [Exercises](./05exercises.md)
   - [Review](./05review.md)
@@ -60,7 +61,7 @@
   - [Callbacks, Async/Await and Fetch](./063_callbacks.md)
   - [Generalisations](./064_generalisation.md)
   - [Recursion](./065_recursion.md)
-  - [Standard IO and Buffers](./066_stdbufs.md)
+  - [Standard IO, and Buffers](./066_stdbufs.md)
   - [Exercises](./06exercises.md)
   - [Review](./06review.md)
 
@@ -74,7 +75,7 @@
   - [Supplementary - Trees](./07trees.md)
   - [Supplementary - Graphs](./07graphs.md)
 
-- [QA, Testing, Debugging and Profiling](./08_software_qa.md)
+- [QA, Testing, Debugging, and Profiling](./08_software_qa.md)
   - [Testing Types](./08_test_types.md)
   - [Vitest](./08vitest.md)
   - [Documentation](./08jsdoc.md)
@@ -95,7 +96,7 @@
   - [HTML Forms and Data](./09forms.md)
   - [CSS Basics and Selectors](./09css1.md)
   - [CSS Media Queries and Transitions](./09css2.md)
-  - [Javascript Event Handling](./09events.md)
+  - [JavaScript Event Handling](./09events.md)
   - [Exercises](./09exercises.md)
   - [Review](./09review.md)
 
@@ -124,4 +125,4 @@
 ---
 
 [Appendix]()
-[Credits]()
+[Contributors]()

@@ -3,7 +3,7 @@
 As part of using the different tags with HTML, we need to know how to best combine the tags in which they are designed to be used.
 
 
-## HTMl, Head and Body
+## HTMl - Head and Body Tags
 
 A HTML document is composed of the `<!DOCTYPE html>`, `<html>`, `<head>` and `<body>` tags.
 
@@ -80,7 +80,7 @@ You will usually fine `<p>` and `<div>` on most websites. `<p>` standing out for
 </p>  
 ```
 
-`<div>` on the otherhand is a lot more versatile and takes on a generic container. It is used to create **division** or some distinction between elements.
+`<div>` on the other-hand is a lot more versatile and takes on a generic container. It is used to create **division** or some distinction between elements.
 
 
 ### Lists

@@ -11,7 +11,7 @@ You have been tasked with writing a program that can identify a value or even or
 
 Consider what operator you may want to use that could easily tell you if number is even or not.
 
-Restrictions: You cannot use any `built-in` javascript functions, only operators and if statements. You are also being asked to avoid the `/` operator and `Math.*` functions.
+Restrictions: You cannot use any `built-in` JavaScript functions, only operators and if statements. You are also being asked to avoid the `/` operator and `Math.*` functions.
 
 Your program should not be more than 10 lines.
 
@@ -85,7 +85,7 @@ For every iteration, `3` was added to the current counter.
 
 ### 4. Roller Coaster
 
-This program requires you to implement a function called `checkHeight`. Firstly, construct a file called `rollercoaster.js`, afterwards define the following function:
+This program requires you to implement a function called `checkHeight`. Firstly, construct a file called `rollercoaster.js`, afterwards, define the following function:
 
 ```js
 function checkHeight(height, threshold) {

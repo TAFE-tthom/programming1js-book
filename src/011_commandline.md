@@ -24,7 +24,7 @@ On Windows, you can access the shell by doing the following:
 
 2. Write as part of the search "Bash", if *Git Bash* is installed, it should show up as the top suggested program.
 
-Alternativesly, you can use *Powershell*.
+Alternatively, you can use *Powershell*.
 
 
 On MacOS, you can do the following:
@@ -47,17 +47,17 @@ Each chapter and topic will usually outline the following concepts that you will
 
 You will learn about the following first.
 
-* Filesystem, Directories and Files
+* Filesystem, Directories, and Files
 
-* Pathing and Naming
+* Paths and Naming
 
-* Commands, Programs and Processes
+* Commands, Programs, and Processes
 
 * Command Line Arguments and Flags
 
 ### Filesystem
 
-A primary usecase with the shell is to interact with the *Filesystem*. The *Filesystem* is a representation of what is on your hard-drive.
+A primary use-case with the shell is to interact with the *Filesystem*. The *Filesystem* is a representation of what is on your hard-drive.
 
 This representation is made up of *Files* and *Directories*.
 
@@ -68,7 +68,7 @@ This representation is made up of *Files* and *Directories*.
 
 Both Windows and Linux utilise a **Tree** structure, everything starts at the root directory which is either `/` or commonly for Windows `C:\`.
 
-*File paths* outline where, relative to the current position or relative to the root of the filesystem is, a file is location. There are two kinds of paths, *relative* and *absolute*.
+*File paths* outline where, relative to the current position or relative to the root of the filesystem is, a file is location. There are two kinds of paths, *relative,* and *absolute*.
 
 * *Absolute* path is based on the root of the filesystem or drive.
 
@@ -88,11 +88,11 @@ Note: Windows uses `\` for separating directories while Linux and Mac uses `/`.
 
 ### Pathing and Naming
 
-To continue with pathing and naming, you can start seeing a pattern in how directories are structured. However, file names may be a little elusive, especially when we see `.mp4` and `.docx` associated with them.
+To continue with paths and naming, you can start seeing a pattern in how directories are structured. However, file names may be a little elusive, especially when we see `.mp4` and `.docx` associated with them.
 
 #### File Extension
 
-File Extensions have been around for a very long time, however files don't necessarily **need** to have an extension, they can exist without them. However they are very **helpful** for the operating system so it knows what application it should launch it with.
+File Extensions have been around for a very long time, however files don't necessarily **need** to have an extension, they can exist without them. However, they are very **helpful** for the operating system so it knows what application it should launch it with.
 
 As a quick test:
 
@@ -105,11 +105,11 @@ As a quick test:
 
 ## Knowledge Tasks
 
-Make sure you take note of the following concepts and have a quick summar of what they are.
+Make sure you take note of the following concepts and have a quick summary of what they are.
 
 1. Find an example of a shell, specifically find information that will inform you what the differences are between Bash, Zsh and Powershell are.
 
 2. Given the scope of the document, consider why deploying on Linux Servers is very common. Consider what domains (like Software Development, Computer Graphics, Web Development, Informatics) linux is used in.
 
-3. Given the brief introduction of a filesystem, provide some concrete examples of a file. What are some file types you commonly open and how do you organise your files?
+3. Given the brief introduction of a filesystem, provide some concrete examples of a file. What are some file-types you commonly open and how do you organise your files?
 

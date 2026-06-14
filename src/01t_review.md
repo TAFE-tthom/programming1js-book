@@ -6,7 +6,7 @@ Review the following and ensure you can produce some evidence in the form of **n
 
 * What you should know and understand
   * The shell on your device
-  * Filesystem pathing, files and directories
+  * Filesystem paths, files, and directories
   * Filesystem structure
   * Concepts of a program and process
   * What a command is and how it relates to a program
@@ -17,7 +17,7 @@ Review the following and ensure you can produce some evidence in the form of **n
   * Open a shell
   * Be able to run commands
   * Navigate the filesystem using some basic commands
-  * Be able to run a javascript program using `node`
+  * Be able to run a JavaScript program using `node`
   * Pass appropriate command line arguments to commands
   <!-- * Be able to use `git` to clone the exercise repository -->
 

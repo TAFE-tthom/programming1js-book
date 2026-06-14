@@ -1,10 +1,10 @@
 # Exercises
 
-The following exericses are a good challenge and demonstration of your skills of using all tools and skills documented in the chapter.
+The following exercises are a good challenge and demonstration of your skills of using all tools and skills documented in the chapter.
 
 ## Tasks
 
-### 1. TodoList
+### 1. Todo-List
 
 Write a website that will allow someone to construct a TODO List website, it must have:
 
@@ -20,7 +20,7 @@ Write a website that will allow someone to construct a TODO List website, it mus
 
 ### 2. Image Gallery
 
-Write a website that will be an image gallery, the user should be able to have their cursor hover over images and let have more of a preview. When the image is clicked, the image should enlarge to fill the browser window.
+Write a website that will be an image gallery, the user should be able to have their cursor hover over images and let's have more of a preview. When the image is clicked, the image should enlarge to fill the browser window.
  
 * Your image gallery should also handle key events, when the user presses left or right arrow keys on the keyboard, it should switch to a new image
 
@@ -29,25 +29,25 @@ Write a website that will be an image gallery, the user should be able to have t
 
 ### 3. Tic-Tac-Toe (Naughts and Crosses)
 
-This will be a combination of using HTML, CSS and Javascript.
+This will be a combination of using HTML, CSS and JavaScript.
  
 Create 3 rows with 3 cells each of empty boxes. Size them appropriately.
-* Simple method would be to size it as 50px each
+* Simple method would be to size it as `50px` each
 * Consider putting the game inside a container to maintain the size and ensure that you can create rows.
  
-As an extension: Allow your elements to be resizable to the browser window. You may need to consider 'stretch'ing your images or using an svg.
+As an extension: Allow your elements to be resizable to the browser window. You may need to consider 'stretch'ing your images or using an SVG.
  
 
-Afterwards, Add an onclick event to each element, this event should check
+Afterwards, Add an `onclick` event to each element, this event should check
 to see if it is currently empty, if so:
  
-* Allow a X or an O to be placed here and move to the next player's turn
+* Allow an X or an O to be placed here and move to the next player's turn
  
 If it is not empty:
  
 * Reject the move, you can provide an alert to the user that they have made an invalid move.
  
-For each event, it should check to see if the game is complete, this is a matter of seeing if there is a Row, Column or Diagonal that are all of the same symbol (X or O).
+For each event, it should check to see if the game is complete, this is a matter of seeing if there is a Row, Column, or Diagonal that contain a sequence of same symbol (X or O).
  
 Your website should declare the winner (either with an alert or update to another HTML element).
  

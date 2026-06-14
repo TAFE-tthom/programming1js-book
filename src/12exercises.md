@@ -23,7 +23,7 @@ The component you are building will need to display all these elements.
 Consider the following:
 
 * What components would you create?
-* What html tags would you use?
+* What HTML tags would you use?
 * How would you style the profile view?
 
 

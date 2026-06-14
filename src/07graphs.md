@@ -6,7 +6,7 @@ Graphs are a collection of vertices and edges. We have a few different kind of g
 
 Each vertex within a graph is able to connect to other vertices via edges.
 
-Edges have two points, a start and end which refer to vertices. These edges could loop to the same vertex.
+Edges have two points, **Start** and **End** which are referred to as vertices. These edges could loop to the same vertex.
 
 * Directed Graphs
 * Undirected Graphs
@@ -20,12 +20,12 @@ As outlined with the scenarios prior, even seemingly simple applications are goi
 
 ## Graph Terms and Scenarios
 
-* Vertex, usually also called node
-* Edge, which are either a vertex pair or contains more data that describes the connection.
+* **Vertex**, usually also called node, this is represented 
+* **Edge**, which are either a vertex pair or contains more data that describes the connection.
 
-Some scenarions where graphs are used.
+Some scenarios where graphs are used.
 
 * Airport Flights and connections
-* Google maps, routing from one location to another
-* A state machine where we want to know what state we are in and where we transition town
+* Maps, routing from one location to another
+* A state machine where we want to know what state we are in and where we transition to.
 
