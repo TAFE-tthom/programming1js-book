@@ -1,4 +1,6 @@
 
+> This book is a current work in progress and will be continued to be updated with fixes and new content. This version was published on 2026/06/15.
+
 # Programming 1
 
 Welcome to *Programming 1* with **Javascript** using NodeJS and the Web Browser. This series, while being continually developed is give the reader the resources and ability to develop capabilities over this book.
